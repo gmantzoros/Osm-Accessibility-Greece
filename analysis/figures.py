@@ -96,8 +96,8 @@ def fig_presence():
         (label("lit", "lit"), merged("lit", ["no / none", "yes"])),
     ]
 
-    fig, ax = plt.subplots(figsize=(W, 3.45))
-    fig.subplots_adjust(left=0.29, right=0.985, bottom=0.31, top=0.89)
+    fig, ax = plt.subplots(figsize=(W, 3.0))
+    fig.subplots_adjust(left=0.29, right=0.985, bottom=0.25, top=0.97)
     ypos = range(len(rows))
     for y, (row_label, parts) in zip(ypos, rows):
         left = 0.0
@@ -122,16 +122,10 @@ def fig_presence():
     ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:.0f}"))
     ax.get_xticklabels()[-1].set_horizontalalignment("right")
     tidy(ax)
-    fig.text(0.015, 0.975, "Recorded values within their respective feature universes",
-             fontsize=9.3, va="top")
     handles = [plt.Rectangle((0, 0), 1, 1, color=colour) for colour in (HI, BASE, FAINT)]
     fig.legend(handles, ["Literal no / none", "Other named values", "Other values"],
-               loc="lower center", bbox_to_anchor=(0.5, 0.12), ncol=3,
+               loc="lower center", bbox_to_anchor=(0.5, 0.0), ncol=3,
                frameon=False, fontsize=7.6, handlelength=1.2, columnspacing=1.5)
-    fig.text(0.015, 0.087, "Colours group recorded values, not profile acceptance.", fontsize=7.5)
-    fig.text(0.015, 0.042,
-             "Raised kerbs are not universally negative for blind/visually impaired users.",
-             fontsize=7.5)
     save(fig, "fig1_presence_affirmation.png")
 
 
@@ -150,7 +144,7 @@ def fig_cities():
     rank = {r["dimos_code"]: i for i, r in enumerate(rows)}
 
     fig, ax = plt.subplots(figsize=(W, 3.8))
-    fig.subplots_adjust(left=0.12, right=0.985, bottom=0.26, top=0.89)
+    fig.subplots_adjust(left=0.12, right=0.985, bottom=0.26, top=0.97)
     ax.bar(range(len(rows)), [r["v"] for r in rows], width=0.78, zorder=2,
            color=[HI if r["att"] else BASE for r in rows])
 
@@ -194,8 +188,6 @@ def fig_cities():
                [f"Attica ({att_n} groups)", f"Elsewhere ({len(rows) - att_n} groups)"] + median_labels,
                frameon=False, fontsize=7.6, loc="lower center",
                bbox_to_anchor=(0.5, 0.045), ncol=2, handlelength=1.6, columnspacing=2.0)
-    fig.text(0.015, 0.975, "Conditional usable share across population-selected groups",
-             fontsize=9.3, va="top")
     save(fig, "fig2_cities_attica.png")
 
 
@@ -206,9 +198,9 @@ def fig_decidability():
     usable = f["pess_pct"]
     u, wk = f["undecidable"], f["walkable_km"]
 
-    fig = plt.figure(figsize=(W, 5.6))
-    a1 = fig.add_axes([0.29, 0.70, 0.69, 0.14])
-    a2 = fig.add_axes([0.29, 0.14, 0.69, 0.43])
+    fig = plt.figure(figsize=(W, 5.0))
+    a1 = fig.add_axes([0.29, 0.78, 0.69, 0.15])
+    a2 = fig.add_axes([0.29, 0.09, 0.69, 0.52])
 
     left = 0.0
     for label, pct, col in [("PASS", pas, BASE), ("BLOCK", blk, "#6E7F8F"),
@@ -227,11 +219,7 @@ def fig_decidability():
                         fontsize=7.8, color=col, annotation_clip=False)
         left += pct
     threshold = f["fragmentation"]["min_usable_component_km"]
-    fig.text(0.015, 0.975, "A. Profile-conditioned way-length states", fontsize=9.3, va="top")
-    fig.text(0.015, 0.918, "States use modelled way length; node-transition gates are separate.",
-             fontsize=8.0, color="#5A6B7C")
-    fig.text(0.015, 0.879, f"Pessimistic usable share: {usable:.1f}% of eligible length; "
-             f"threshold {threshold:g} eligible km.", fontsize=8.0, color="#5A6B7C")
+    fig.text(0.015, 0.975, "A", fontsize=10, fontweight="bold", va="top")
     a1.set_xlim(0, 100)
     a1.set_xticks(range(0, 101, 20))
     a1.get_xticklabels()[-1].set_horizontalalignment("right")
@@ -247,6 +235,7 @@ def fig_decidability():
               ("crossing attributes\nmissing", u["crossing_attrs_km"]),
               ("other pedestrian\nmissing evidence", u["pedestrian_other_km"]),
               ("other unresolved\nevidence", u["other_km"])]
+    causes = [c for c in causes if c[1] > 0]
     ys = range(len(causes))
     a2.barh(list(ys), [c[1] for c in causes], height=0.6, color=BASE, zorder=2)
     for y, (_, km) in zip(ys, causes):
@@ -260,16 +249,14 @@ def fig_decidability():
     a2.set_xlabel("Modelled way length (km)", fontsize=8.2, labelpad=4)
     a2.xaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v / 1000:.0f}k"))
     tidy(a2)
-    fig.text(0.015, 0.615, f"B. UNKNOWN length ({unk:.1f}%): missing evidence and class policy",
-             fontsize=9.1, va="top")
-    fig.text(0.015, 0.035, "UNKNOWN is not a verdict on physical accessibility.", fontsize=7.7)
+    fig.text(0.015, 0.67, "B", fontsize=10, fontweight="bold", va="top")
     save(fig, "fig3_decidability.png")
 
 
 def fig_countries():
     rows = sorted(D["cross_country"]["rows"], key=lambda r: r["pess_usable_pct"])
     fig, ax = plt.subplots(figsize=(W, max(3.8, 0.9 + 0.255 * len(rows))))
-    fig.subplots_adjust(left=0.19, right=0.985, bottom=0.15, top=0.89)
+    fig.subplots_adjust(left=0.19, right=0.985, bottom=0.15, top=0.97)
     for i, r in enumerate(rows):
         el = r["code"] == "EL"
         col = HI if el else BASE
@@ -295,8 +282,6 @@ def fig_countries():
     ax.set_xticks([0, 20, 40, 60, 80, 100])
     ax.set_xlabel("Eligible-network usable share (%)", fontsize=8.5, labelpad=5)
     tidy(ax)
-    fig.text(0.015, 0.975, f"Conditional endpoints in {len(rows)} selected countries",
-             fontsize=9.3, va="top")
     fig.legend([Line2D([], [], marker="o", color=BASE, linestyle="none"),
                 Line2D([], [], marker="o", color=BASE, markerfacecolor="white", linestyle="none")],
                ["Pessimistic scenario", "Optimistic scenario"], ncol=2,
@@ -309,11 +294,13 @@ CURVE_STYLES = {
     "length_only": (HI, "--", "s"),
     "consolidation_per_km": (GREEN, "-.", "^"),
 }
+ORDERING_LABELS = {"static_initial_consolidation": "Consolidation", "length_only": "Length-first",
+                   "consolidation_per_km": "Consolidation per km"}
 
 
 def fig_targeting(report, curves):
-    fig, ax = plt.subplots(figsize=(W, 3.55))
-    fig.subplots_adjust(left=0.13, right=0.98, bottom=0.22, top=0.88)
+    fig, ax = plt.subplots(figsize=(W, 3.2))
+    fig.subplots_adjust(left=0.13, right=0.98, bottom=0.15, top=0.97)
     for key, curve in curves.items():
         colour, style, marker = CURVE_STYLES[key]
         xs = [0] + [point.tasks for point in curve.points]
@@ -321,14 +308,14 @@ def fig_targeting(report, curves):
         if key == "static_initial_consolidation":
             ax.fill_between(xs, 0, ys, step="post", color=colour, alpha=0.09)
         ax.step(xs, ys, where="post", color=colour, linestyle=style, linewidth=1.4,
-                label=f"{SOURCES[key][2]} ({ys[-1]:,.0f} km)")
+                label=f"{ORDERING_LABELS[key]} ({ys[-1]:,.0f} km)")
         ax.plot(xs[-1], ys[-1], marker=marker, color=colour, markersize=4.0)
     main = curves["static_initial_consolidation"]
     k = min(1000, len(main.points))
     gain = float(main.points[k - 1].usable_gain_km)
     proportion = 100 * gain / float(main.points[-1].usable_gain_km)
     ax.plot(k, gain, "o", color=BASE, markersize=4.0)
-    ax.annotate(f"{k:,} static-score tasks:\n{gain:,.0f} km; {proportion:.1f}% of its saved total",
+    ax.annotate(f"{k:,} consolidation tasks:\n{gain:,.0f} km; {proportion:.1f}% of its total",
                 (k, gain), xytext=(14, -31), textcoords="offset points",
                 fontsize=7.7, color=BASE, linespacing=1.35,
                 arrowprops=dict(arrowstyle="-", color=BASE, linewidth=0.6))
@@ -339,21 +326,18 @@ def fig_targeting(report, curves):
     ax.set_ylabel("Conditional eligible usable gain (km)", fontsize=8.2)
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v / 1000:.0f}k"))
     tidy(ax, grid="y")
-    fig.text(0.015, 0.975, "All-positive way-state scenarios with fixed node gates",
-             fontsize=9.3, va="top")
-    fig.text(0.015, 0.04, "Task counts are not survey-time or realised-yield estimates.", fontsize=7.6)
     save(fig, "fig5_targeting_curve.png")
 
 
 def fig_targeting_distance(report, curves):
     upper = report["common_max_survey_km"]
-    fig = plt.figure(figsize=(W, 4.85))
-    ax = fig.add_axes([0.13, 0.47, 0.85, 0.425])
+    fig = plt.figure(figsize=(W, 3.2))
+    ax = fig.add_axes([0.13, 0.15, 0.85, 0.82])
     for key, curve in curves.items():
         colour, style, marker = CURVE_STYLES[key]
         xs, ys = curve.staircase(upper)
         ax.step(xs, ys, where="post", color=colour, linestyle=style,
-                linewidth=1.5, label=SOURCES[key][2])
+                linewidth=1.5, label=ORDERING_LABELS[key])
         prefix = curve.prefix(upper)
         ax.plot(float(prefix.survey_km), float(prefix.usable_gain_km),
                 marker=marker, color=colour, markersize=4.5, clip_on=False)
@@ -369,27 +353,6 @@ def fig_targeting_distance(report, curves):
     ax.yaxis.set_major_formatter(FuncFormatter(lambda v, _: f"{v:,.0f}"))
     ax.legend(frameon=False, fontsize=7.7, loc="upper left", handlelength=2.2)
     tidy(ax, grid="y")
-    fig.text(0.015, 0.975, "Equal recorded survey-distance budgets", fontsize=9.3, va="top")
-    fig.text(0.015, 0.925,
-             f"All-positive way-state overrides; node gates fixed; threshold {report['component_threshold_km']:g} eligible km.",
-             fontsize=7.7, color="#5A6B7C")
-    fig.text(0.015, 0.30, f"Common maximum: {upper:,.3f} km budget (complete prefixes)",
-             fontsize=8.3)
-    table = fig.add_axes([0.015, 0.125, 0.97, 0.12])
-    table.axis("off")
-    for x, text, alignment in ((0, "Ordering", "left"), (0.57, "Tasks", "right"),
-                                (0.79, "Used (km)", "right"), (0.995, "Gain (km)", "right")):
-        table.text(x, 1.0, text, ha=alignment, fontsize=7.8, fontweight="bold")
-    endpoint = report["comparisons"][-1]["strategies"]
-    for y, (key, prefix) in zip((0.70, 0.37, 0.04), endpoint.items()):
-        table.text(0, y, SOURCES[key][2], fontsize=7.8, color=CURVE_STYLES[key][0])
-        table.text(0.57, y, f"{prefix['selected_tasks']:,}", ha="right", fontsize=7.8)
-        table.text(0.79, y, f"{prefix['used_survey_km']:,.3f}", ha="right", fontsize=7.8)
-        table.text(0.995, y, f"{prefix['cumulative_usable_gain_km']:,.3f}", ha="right", fontsize=7.8)
-    fig.text(0.015, 0.075, "Ranked prefixes only: no fractional ways, skipped next ways or extrapolation.",
-             fontsize=7.4)
-    fig.text(0.015, 0.04, "Equal distance is not equal task count, survey time or realised yield.",
-             fontsize=7.4)
     save(fig, "fig8_targeting_distance.png")
 
 
@@ -422,8 +385,8 @@ def fig_sidewalk_audit():
     rows.sort(key=lambda r: (-r[2] / r[3] if r[3] else 1, r[0]))
 
     row_h = 0.24 if len(rows) <= 15 else 0.13
-    height = 1.3 + row_h * len(rows)
-    top, bottom = 1 - 0.95 / height, 0.42 / height
+    height = 0.85 + row_h * len(rows)
+    top, bottom = 1 - 0.45 / height, 0.42 / height
     fig = plt.figure(figsize=(W, height))
     ax = fig.add_axes([0.2, bottom, 0.68, top - bottom])
     segments = (("Both sides", BASE), ("One side", "#7E9CBB"), ("No sidewalk", HI),
@@ -447,13 +410,7 @@ def fig_sidewalk_audit():
     ax.set_xlabel("Sampled locations per community", fontsize=8.1)
     tidy(ax, grid="x")
     ax.spines["left"].set_visible(False)
-    fig.text(0.015, 1 - 0.1 / height, "Visible sidewalks at sampled locations on untagged drivable ways",
-             fontsize=9.3, va="top")
-    fig.text(0.015, 1 - 0.34 / height,
-             f"{sum(sum(r[1]) for r in rows)} points in {len(rows)} communities. "
-             f"Recency: imagery within five years of {m['reference_date']}.",
-             fontsize=7.7, color="#5A6B7C", va="top")
-    fig.legend(loc="upper left", bbox_to_anchor=(0.005, 1 - 0.5 / height), ncol=5, frameon=False,
+    fig.legend(loc="upper left", bbox_to_anchor=(0.005, 1 - 0.02 / height), ncol=5, frameon=False,
                fontsize=7.4, handlelength=1.2, columnspacing=1.2)
     save(fig, AUDIT_FIGURE)
     return True

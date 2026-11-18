@@ -133,38 +133,30 @@ def fig_imagery():
     ax.legend(handles, labels, loc="upper left", frameon=True, framealpha=0.9,
               fontsize=7.8, ncol=2, handlelength=1.0, columnspacing=1.0,
               borderaxespad=0.4, edgecolor="none")
-    fig.text(0.015, 0.985, "A. Image-level segmentation, not geolocated ground truth",
-             fontsize=9.1, va="top")
-    fig.text(0.015, 0.294,
-             f"Mapillary {IMAGE_ID} · nglf · CC BY-SA 4.0 · captured {captured}",
-             fontsize=7.5)
+    fig.text(0.015, 0.985, "A", fontsize=10, fontweight="bold", va="top")
 
     ax2 = fig.add_axes([0.015, 0.035, 0.97, 0.225])
     ax2.set_xlim(0, 1)
     ax2.set_ylim(0, 1)
     ax2.axis("off")
-    ax2.text(0, 0.99, "B. Complementary observation frames", fontsize=9.1, va="top")
+    ax2.text(0, 0.99, "B", fontsize=10, fontweight="bold", va="top")
 
     mly = D["mapillary"]
     audit = D["audit"]
-    audit_status = ("Primary observations reported separately."
-                    if D.get("manual_audit", {}).get("full_primary")
-                    else "Observations pending.")
     boxes = [
         (0, 0.48, GREEN, "#F1F5F2",
-         "Automated spatial screening",
+         "Automated screening",
          f"{mly['intersections']:,.0f} shared-way-node candidates"
          f"\n{mly['junctions_in_image_positive_tiles']:,.0f} in image-positive tiles"
          "\nCrossing / pedestrian-head matches: 25 m"
          "\nTile coverage does not establish visibility;"
          "\nflags are not verified missing features."),
         (0.52, 0.48, HI, "#FAF3EE",
-         "Sidewalk-only manual draw",
-         f"{audit['n']:,} cases: {audit['n'] // audit['cities']} per principal LAU ({audit['cities']} LAUs)"
-         f"\nSidewalk-only draw; {audit_status}"
-         "\nLocal visible presence, not whole-way passage."
-         "\nNo kerb/tactile arms in the current draw."
-         "\nStill images cannot establish sound operation."),
+         "Sidewalk audit",
+         f"{audit['n']:,} points: {audit['n'] // audit['cities']} in each of {audit['cities']} principal"
+         "\ncommunities, on drivable ways without a"
+         "\nsidewalk tag. Visible presence at the point,"
+         "\nnot whole-way passage."),
     ]
     for x, bw, col, background, head, body in boxes:
         ax2.add_patch(FancyBboxPatch((x, 0.04), bw, 0.76,
@@ -177,15 +169,15 @@ def fig_imagery():
 
 def fig_graph():
     f = D["feasibility_national"]
-    fig = plt.figure(figsize=(W, 5.4))
-    a = fig.add_axes([0.015, 0.405, 0.45, 0.535])
-    b = fig.add_axes([0.525, 0.405, 0.46, 0.535])
+    fig = plt.figure(figsize=(W, 4.3))
+    a = fig.add_axes([0.015, 0.20, 0.45, 0.70])
+    b = fig.add_axes([0.525, 0.20, 0.46, 0.70])
     for ax in (a, b):
         ax.set_xlim(0, 100)
         ax.set_ylim(0, 100)
         ax.axis("off")
 
-    a.set_title("A. Crossing evidence", fontsize=9.1, loc="left", pad=8)
+    a.set_title("A", fontsize=10, fontweight="bold", loc="left", pad=8)
     a.add_patch(plt.Rectangle((4, 40), 92, 26, facecolor=FAINT, edgecolor="none", zorder=1))
     a.text(7, 53, "carriageway", fontsize=7.2, color="#5A6B7C", va="center")
     for yy in (36, 70):
@@ -203,7 +195,7 @@ def fig_graph():
            fontsize=7.1, ha="center", va="center", color=HI, linespacing=1.4)
 
     threshold = f["fragmentation"]["min_usable_component_km"]
-    b.set_title("B. Scenario graph and eligible mass", fontsize=9.1, loc="left", pad=8)
+    b.set_title("B", fontsize=10, fontweight="bold", loc="left", pad=8)
     steps = [
         (96, 18, BASE, "Way/crossing evidence + profile → way states\nPASS / BLOCK / UNKNOWN"),
         (71, 17, BASE, "Node evidence → transition-gate states\nPASS / BLOCK / UNKNOWN; zero-length gates"),
@@ -221,23 +213,11 @@ def fig_graph():
         b.add_patch(FancyArrowPatch((50, y0), (50, y1), arrowstyle="-|>", mutation_scale=6,
                                     color="#5A6B7C", linewidth=0.8))
 
-    footer = fig.add_axes([0.015, 0.04, 0.97, 0.315])
+    footer = fig.add_axes([0.015, 0.02, 0.97, 0.13])
     footer.axis("off")
-    footer.text(0.01, 0.87,
-                r"$U_s(\%)=100\,\frac{\sum_{C\in\mathcal{C}_s}L_e(C)\,\mathbf{1}\{L_e(C)\geq\tau\}}{L_e(G)}$",
-                fontsize=10.8, va="center")
-    footer.text(0.01, 0.65,
-                rf"$L_e(C)$ supplies both usable credit and threshold mass ($\tau={threshold:g}$ eligible km).",
-                fontsize=8.0)
-    footer.text(0.01, 0.47,
-                "Auxiliary geometry may connect; it supplies neither usable credit nor threshold mass.",
-                fontsize=7.6)
-    footer.text(0.01, 0.29,
-                r"Gates have zero length; the denominator is total eligible network mass $L_e(G)$.",
-                fontsize=7.8)
-    footer.text(0.01, 0.09,
-                f"Conditional share: pessimistic {f['pess_pct']:.1f}%  |  optimistic {f['opt_pct']:.1f}%"
-                f"  |  gap {f['gap_pct']:.1f} pp", fontsize=8.1, color=HI)
+    footer.text(0.5, 0.5,
+                r"$p^{s}=\frac{100}{L_e}\sum_{C\in\mathcal{C}(G^{s})}L_e(C)\,\mathbf{1}[L_e(C)\geq\tau],\quad s\in\{-,+\}$",
+                fontsize=10.8, ha="center", va="center")
     save(fig, "fig7_graph_construction.png")
 
 
