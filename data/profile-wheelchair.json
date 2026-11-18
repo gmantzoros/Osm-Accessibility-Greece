@@ -1,0 +1,120 @@
+{
+  "id": "wheelchair-v0",
+  "mode": "wheelchair",
+  "revision": "2026-09-15",
+  "description": "Revised 2026-09-15 conditional wheelchair tag profile, not a physical safety guarantee. Shares primary defaults with BVI; agreement cannot establish model independence. Roadway width/surface are not used as sidewalk measurements.",
+  "excludedClasses": [
+    "motorway",
+    "trunk",
+    "motorway_link",
+    "trunk_link",
+    "raceway",
+    "busway"
+  ],
+  "sidewalk": {
+    "comment": "Missing sidewalk evidence is unresolved, not evidence of physical absence. Separately mapped sidewalks do not establish an additional passing centreline geometry.",
+    "affirmative": [
+      "yes",
+      "both",
+      "left",
+      "right",
+      "separate"
+    ],
+    "negative": [
+      "no",
+      "none"
+    ],
+    "onMissing": "unknown"
+  },
+  "pedestrianWays": {
+    "comment": "Dedicated pedestrian infrastructure is PASS unless something contradicts it.",
+    "classes": [
+      "footway",
+      "path",
+      "pedestrian",
+      "corridor",
+      "living_street"
+    ],
+    "default": "pass"
+  },
+  "crossing": {
+    "comment": "Primary PASS requires lowered/flush kerb or affirmative wheelchair evidence. Explicit blocking kerb or wheelchair evidence dominates.",
+    "passIf": {
+      "kerb": [
+        "flush",
+        "lowered"
+      ],
+      "wheelchair": [
+        "yes",
+        "designated"
+      ]
+    },
+    "blockIf": {
+      "kerb": [
+        "raised"
+      ],
+      "wheelchair": [
+        "no"
+      ]
+    },
+    "onMissing": "unknown"
+  },
+  "steps": {
+    "comment": "Steps are impassable in a wheelchair unless an explicit ramp exists.",
+    "passIf": {
+      "ramp:wheelchair": [
+        "yes"
+      ],
+      "ramp": [
+        "yes"
+      ]
+    },
+    "blockIf": {},
+    "onMissing": "block"
+  },
+  "kerb": {
+    "block": [
+      "raised"
+    ],
+    "pass": [
+      "flush",
+      "lowered"
+    ],
+    "onMissing": "pass"
+  },
+  "surface": {
+    "comment": "Declared wheelchair surface exclusions. The raw surface diagnostic is not a physical quality assessment.",
+    "block": [
+      "mud",
+      "sand",
+      "grass",
+      "earth",
+      "ground",
+      "dirt",
+      "pebblestone",
+      "cobblestone",
+      "sett"
+    ],
+    "degrade": [
+      "gravel",
+      "fine_gravel",
+      "unpaved",
+      "compacted"
+    ],
+    "onMissing": "pass"
+  },
+  "smoothness": {
+    "block": [
+      "bad",
+      "very_bad",
+      "horrible",
+      "very_horrible",
+      "impassable"
+    ],
+    "onMissing": "pass"
+  },
+  "maxInclinePercent": 6.0,
+  "minWidthMetres": 0.9,
+  "minUsableComponentKm": 1.0,
+  "minUsableComponentKmComment": "A declared fragmentation convention, not proof of trip usefulness. Eligible metrics threshold eligible component mass; legacy graph metrics threshold total admitted mass."
+}

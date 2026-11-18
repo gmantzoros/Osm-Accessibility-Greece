@@ -1,0 +1,71 @@
+{
+  "id": "bvi-v0",
+  "mode": "bvi",
+  "revision": "2026-09-15",
+  "description": "Conditional BVI tag-rule graph, not physical accessibility or a safety guarantee. UNKNOWN includes unresolved evidence and deliberately unmodelled classes. Missing secondary measurements retain the primary state.",
+
+  "excludedClasses": ["motorway", "trunk", "motorway_link", "trunk_link", "raceway", "busway"],
+
+  "sidewalk": {
+    "comment": "Missing sidewalk evidence is unresolved, not evidence of physical absence. Separately mapped sidewalks do not establish an additional passing centreline geometry.",
+    "affirmative": ["yes", "both", "left", "right", "separate"],
+    "negative": ["no", "none"],
+    "onMissing": "unknown"
+  },
+
+  "pedestrianWays": {
+    "comment": "Dedicated pedestrian infrastructure is PASS unless something contradicts it.",
+    "classes": ["footway", "path", "pedestrian", "corridor", "living_street"],
+    "default": "pass"
+  },
+
+  "crossing": {
+    "comment": "A crossing is the decision point that matters most for a blind pedestrian. PASS needs a positive accessibility signal; an explicit negative blocks; silence is UNKNOWN.",
+    "passIf": {
+      "tactile_paving": ["yes", "contrasted", "primitive"],
+      "traffic_signals:sound": ["yes", "walk", "always"]
+    },
+    "blockIf": {
+      "tactile_paving": ["no", "incorrect"],
+      "crossing:markings": ["no"],
+      "crossing": ["unmarked", "informal", "no"]
+    },
+    "onMissing": "unknown"
+  },
+
+  "steps": {
+    "comment": "Model assumption: handrail OR tactile warning may establish the primary PASS state; explicit blocking evidence dominates.",
+    "passIf": {
+      "handrail": ["yes", "both", "left", "right"],
+      "tactile_paving": ["yes", "contrasted"]
+    },
+    "blockIf": {
+      "handrail": ["no"]
+    },
+    "onMissing": "unknown"
+  },
+
+  "kerb": {
+    "block": ["raised"],
+    "pass": ["flush", "lowered"],
+    "onMissing": "pass"
+  },
+
+  "surface": {
+    "comment": "Surfaces that defeat a long cane or a guide dog. `degrade` does not block but is reported separately as a quality caveat.",
+    "block": ["mud", "sand", "grass", "earth"],
+    "degrade": ["cobblestone", "sett", "gravel", "ground", "dirt", "pebblestone", "unpaved", "fine_gravel"],
+    "onMissing": "pass"
+  },
+
+  "smoothness": {
+    "block": ["very_bad", "horrible", "very_horrible", "impassable"],
+    "onMissing": "pass"
+  },
+
+  "maxInclinePercent": 8.0,
+  "minWidthMetres": 0.9,
+
+  "minUsableComponentKm": 1.0,
+  "minUsableComponentKmComment": "A declared fragmentation convention, not proof of trip usefulness. Eligible metrics threshold eligible component mass; legacy graph metrics threshold total admitted mass."
+}

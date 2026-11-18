@@ -1,0 +1,5 @@
+﻿file=greece-latest.osm.pbf
+url=https://download.geofabrik.de/europe/greece-latest.osm.pbf
+downloaded=2026-08-28 14:05:50 +03:00
+md5=2eaed090e58af6ad0aa664097f1b80aa
+size_bytes=339776310

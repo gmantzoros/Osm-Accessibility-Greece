@@ -1,0 +1,44 @@
+{
+  "comment": "Named strata for the Greece accessibility census. Circles: centre (WGS84) + radius km. Coordinates are initial estimates - verify on a map, then freeze (see docs/strata.md). NATIONAL is implicit and always computed.",
+  "strata": [
+    { "name": "Athens",       "group": "metro",         "centerLat": 37.9838, "centerLon": 23.7275, "radiusKm": 12.0 },
+    { "name": "Thessaloniki", "group": "metro",         "centerLat": 40.6401, "centerLon": 22.9444, "radiusKm": 8.0 },
+
+    { "name": "Patras",       "group": "large_city",    "centerLat": 38.2466, "centerLon": 21.7346, "radiusKm": 5.0 },
+    { "name": "Heraklion",    "group": "large_city",    "centerLat": 35.3387, "centerLon": 25.1442, "radiusKm": 5.0 },
+    { "name": "Larissa",      "group": "large_city",    "centerLat": 39.6390, "centerLon": 22.4191, "radiusKm": 5.0 },
+    { "name": "Volos",        "group": "large_city",    "centerLat": 39.3622, "centerLon": 22.9420, "radiusKm": 4.0 },
+
+    { "name": "Ioannina",     "group": "medium_town",   "centerLat": 39.6650, "centerLon": 20.8537, "radiusKm": 4.0 },
+    { "name": "Chania",       "group": "medium_town",   "centerLat": 35.5138, "centerLon": 24.0180, "radiusKm": 4.0 },
+    { "name": "Kalamata",     "group": "medium_town",   "centerLat": 37.0389, "centerLon": 22.1142, "radiusKm": 4.0 },
+    { "name": "Trikala",      "group": "medium_town",   "centerLat": 39.5557, "centerLon": 21.7679, "radiusKm": 4.0 },
+    { "name": "Serres",       "group": "medium_town",   "centerLat": 41.0856, "centerLon": 23.5484, "radiusKm": 4.0 },
+    { "name": "Xanthi",       "group": "medium_town",   "centerLat": 41.1349, "centerLon": 24.8880, "radiusKm": 4.0 },
+
+    { "name": "Nafplio",      "group": "small_town",    "centerLat": 37.5680, "centerLon": 22.8080, "radiusKm": 3.0 },
+    { "name": "Karystos",     "group": "small_town",    "centerLat": 38.0143, "centerLon": 24.4177, "radiusKm": 3.0 },
+    { "name": "Edessa",       "group": "small_town",    "centerLat": 40.8009, "centerLon": 22.0475, "radiusKm": 3.0 },
+    { "name": "Sparti",       "group": "small_town",    "centerLat": 37.0733, "centerLon": 22.4297, "radiusKm": 3.0 },
+    { "name": "Igoumenitsa",  "group": "small_town",    "centerLat": 39.5039, "centerLon": 20.2657, "radiusKm": 3.0 },
+
+    { "name": "Ermoupoli",    "group": "island",        "centerLat": 37.4419, "centerLon": 24.9419, "radiusKm": 3.0 },
+    { "name": "RhodesTown",   "group": "island",        "centerLat": 36.4349, "centerLon": 28.2176, "radiusKm": 4.0 },
+    { "name": "Mytilene",     "group": "island",        "centerLat": 39.1075, "centerLon": 26.5548, "radiusKm": 3.0 },
+    { "name": "NaxosTown",    "group": "island",        "centerLat": 37.1036, "centerLon": 25.3765, "radiusKm": 3.0 },
+
+    { "name": "Santorini",    "group": "tourist_rural", "centerLat": 36.4162, "centerLon": 25.4324, "radiusKm": 6.0 },
+
+    { "name": "GrevenaArea",  "group": "rural",         "centerLat": 40.0837, "centerLon": 21.4273, "radiusKm": 8.0 },
+    { "name": "KarpenisiArea","group": "rural",         "centerLat": 38.9203, "centerLon": 21.6296, "radiusKm": 8.0 },
+    { "name": "VytinaArea",   "group": "rural",         "centerLat": 37.6710, "centerLon": 22.1860, "radiusKm": 8.0 }
+  ],
+  "polygonLayers": [
+    { "id": "municipality", "file": "boundaries/greece_municipalities.geojson",
+      "nameProperty": "name", "groupProperty": "group", "defaultGroup": "municipality", "enabled": true },
+    { "id": "region",       "file": "boundaries/greece_regions.geojson",
+      "nameProperty": "name", "groupProperty": "group", "defaultGroup": "region", "enabled": true },
+    { "id": "nuts3",        "file": "boundaries/greece_nuts3.geojson",
+      "nameProperty": "name", "groupProperty": "group", "defaultGroup": "nuts3", "enabled": true }
+  ]
+}

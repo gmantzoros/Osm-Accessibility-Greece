@@ -1,0 +1,8 @@
+# Current-byte inventory observed 2026-10-07, not an original acquisition manifest.
+# SHA256/size describe retained local bytes only. Original download dates, actual
+# original URLs/provider responses and upstream verification records are unknown.
+# declared_source_url is a candidate GISCO location for explicit, opt-in
+# restoration, not proof of the original acquisition source or upstream checksum.
+file=LAU_RG_01M_2021_4326.geojson declared_source_url=https://gisco-services.ec.europa.eu/distribution/v2/lau/geojson/LAU_RG_01M_2021_4326.geojson sha256=21685c52910b8fe6b89a6b697b9c0f9c2ec81a1e90a361f0a7971e83c70bd289 size_bytes=126006913 verification_status=current-local-bytes-only original_acquisition=unverified
+file=NUTS_RG_01M_2021_4326_LEVL_2.geojson declared_source_url=https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_01M_2021_4326_LEVL_2.geojson sha256=eec92d24c062b83b3c0eb8f739f78683013f70bf4a848833ded82102f7a057bd size_bytes=18077469 verification_status=current-local-bytes-only original_acquisition=unverified
+file=NUTS_RG_01M_2021_4326_LEVL_3.geojson declared_source_url=https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_01M_2021_4326_LEVL_3.geojson sha256=554336d416056abcd1d6f3239e3d5893560ca180056971557403c6fd8ff66d2c size_bytes=28176705 verification_status=current-local-bytes-only original_acquisition=unverified

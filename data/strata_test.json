@@ -1,0 +1,29 @@
+{
+  "comment": "Smoke-test config: Malta circles + synthetic boxes. Validates the polygon path and the audit sampler against a small extract. Not used for the paper.",
+  "strata": [
+    {
+      "name": "Valletta",
+      "group": "metro",
+      "centerLat": 35.8989,
+      "centerLon": 14.5146,
+      "radiusKm": 5.0
+    },
+    {
+      "name": "Gozo",
+      "group": "island",
+      "centerLat": 36.0443,
+      "centerLon": 14.2514,
+      "radiusKm": 6.0
+    }
+  ],
+  "polygonLayers": [
+    {
+      "id": "testbox",
+      "file": "../census/src/test/resources/test_boxes.geojson",
+      "nameProperty": "name",
+      "groupProperty": "group",
+      "defaultGroup": "test",
+      "enabled": true
+    }
+  ]
+}

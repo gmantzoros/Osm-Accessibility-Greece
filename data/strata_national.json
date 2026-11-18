@@ -1,0 +1,5 @@
+{
+  "comment": "National-only frame for the cross-country comparison: no circles, no polygon layers. Keeps the run light and makes every country strictly comparable.",
+  "strata": [],
+  "polygonLayers": []
+}
