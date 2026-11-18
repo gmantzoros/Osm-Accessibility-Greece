@@ -149,7 +149,3 @@ keep their own terms; see `docs/licensing.md`.
 
 Mantzoros G, Meliones A. *Accessibility Information and Routing Uncertainty in
 OpenStreetMap: A National Study of Greece.* Manuscript, 2026.
-
-Related earlier work: Meliones A, Mantzoros G. Discovery of Upcoming Cross
-Streets in Google Maps Blind Navigation. *Applied Sciences* 15(24):13215
-(2025). https://doi.org/10.3390/app152413215
