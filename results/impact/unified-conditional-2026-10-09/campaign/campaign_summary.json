@@ -1,0 +1,40 @@
+{
+  "scope": "national",
+  "urban_intersection_applied": false,
+  "tasks": 5000,
+  "named_place_labels": 2923,
+  "unique_laus": null,
+  "place_note": "Place labels can mix named circles and LAUs; not counts of municipalities.",
+  "objective": "marginal thresholded eligible-core usable km under the configured graph scope",
+  "selection_method": "static_initial_consolidation",
+  "intervention_model": "way_state_override_fixed_node_transitions",
+  "assumption": "Selected way states are set to PASS while existing node transitions remain fixed.",
+  "interpretation": "Idealised positive way-state scenario, not literal tag edits, cascading evidence propagation, or predicted realised accessibility.",
+  "usable_km_before": 19347.56,
+  "usable_km_after": 50768.836,
+  "usable_gain_km": 31421.276,
+  "selected_own_km": 30907.91,
+  "median_own_km": 5.4595,
+  "max_own_km": 29.474,
+  "selected_survey_km": 30907.91,
+  "selected_eligible_own_km": 30907.91,
+  "survey_distance_note": "Sum of selected way lengths, not a travel itinerary or measured effort.",
+  "desk_minutes_scenarios": [
+    2,
+    10,
+    30
+  ],
+  "cost_excludes": [
+    "travel",
+    "failed inspections",
+    "imagery availability",
+    "whole-way survey time",
+    "quality assurance",
+    "functional acoustic testing"
+  ],
+  "question_mix": {
+    "does this street have a sidewalk?": 4993,
+    "does this crossing have tactile paving or an acoustic signal?": 3,
+    "do these steps have a handrail?": 4
+  }
+}

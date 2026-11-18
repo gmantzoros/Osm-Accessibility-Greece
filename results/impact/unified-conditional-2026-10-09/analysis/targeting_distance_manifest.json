@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "model_version": "conditional-2026-10-09",
+  "producer": "targeting_distance",
+  "source_sha256": {
+    "results/impact/greece-full-strata-conditional-2026-10-09/run_manifest.json": "59f84506e7c8c2139bed2da94df41a272ec24602173374578c98fcda32a61698",
+    "results/impact/greece-full-strata-conditional-2026-10-09/edit_targets_summary.csv": "03b1783b1ca3ca1002a617137b8844e8b799c8e90e3077a6e678ee867a173ff8",
+    "results/impact/greece-full-strata-conditional-2026-10-09/edit_targets.csv": "d3e49861078db2e88008b6b08a711040bf991157f2c4ad6fee873b580d08c74b",
+    "results/impact/greece-full-strata-conditional-2026-10-09/edit_targets_length_baseline.csv": "54f83e52acd0e5419c8cdbeff92a1d42f85a759b5995f0c93763c8e7ff2dbb26",
+    "results/impact/greece-full-strata-conditional-2026-10-09/edit_targets_efficiency.csv": "ef3225e535d1fda7ef6f21eba308ded7ef83c0302538705f2d5e2da3866440be",
+    "analysis/targeting_distance.py": "08a8154ba8dece6f5e3d49300f0b8ea16e0a45319b8f521f5d77b61ad618d4f9"
+  },
+  "output_sha256": {
+    "results/impact/unified-conditional-2026-10-09/analysis/targeting_distance.json": "0e94ddfee3543a6dec08501196f8a6a6c341b6bd530a6c46bc3f6bcdea6c7e9d",
+    "results/impact/unified-conditional-2026-10-09/analysis/targeting_distance.csv": "b3695abe43617e785b5e704b3ddbc93c0cc2fb930e45535f013695e7af6b1b22"
+  }
+}

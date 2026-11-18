@@ -1,0 +1,37 @@
+{
+  "unit": "LAU/local community, not whole dimos or individual resident",
+  "population_source_field": "GISCO LAU 2021 POP_2021 (CSV alias pop_2021)",
+  "population_reference_year": "unverified per LAU; Greek sum and Athens match revised 2011",
+  "included_laus": 6128,
+  "included_population_field_sum": 10816286.0,
+  "lookup_population_field_sum": 10816286.0,
+  "exclusions": {
+    "missing_feasibility": {
+      "laus": 0,
+      "population_field_sum": 0
+    },
+    "nonpositive_population": {
+      "laus": 9,
+      "population_field_sum": 0.0
+    },
+    "no_network": {
+      "laus": 0,
+      "population_field_sum": 0
+    },
+    "no_eligible_network": {
+      "laus": 0,
+      "population_field_sum": 0
+    }
+  },
+  "interpretation": "GISCO population-field-weighted mapped-evidence indicators; not current exposure",
+  "primary_denominator": "eligible nonauxiliary length",
+  "component_threshold_basis": "eligible component mass, not total auxiliary-inclusive mass",
+  "state_percentages_denominator": "all graph way length; zero-length node uncertainty reported separately",
+  "legacy_metric_labels": {
+    "pop_no_crossings": "population field in included LAUs with no mapped crossing records",
+    "pop_no_tactile": "population field in included LAUs without crossing tactile statements",
+    "pop_no_sound": "population field in included LAUs without signal-node sound statements",
+    "pop_guaranteed_under_5pct": "population field in included LAUs below 5% pessimistic profile-supported share",
+    "pop_guaranteed_under_1pct": "population field in included LAUs below 1% pessimistic profile-supported share"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "schema_version": 1,
+  "model_version": "conditional-2026-10-09",
+  "profile_id": "bvi-v0",
+  "graph_scope": "extended",
+  "component_threshold_km": 1.0,
+  "intervention_model": "way_state_override_fixed_node_transitions",
+  "scenario": {
+    "all_positive": true,
+    "selected_way_states": "PASS",
+    "node_transition_gates": "fixed",
+    "interpretation": "Conditional way-state overrides, not literal tag-edit effects, verified physical accessibility or predicted realised survey yield."
+  },
+  "definitions": {
+    "survey_distance": "Sum of selected whole-way survey extents; overlapping geometry is not deduplicated. Not travel distance, elapsed time or measured effort.",
+    "usable_gain": "Saved cumulative_usable_gain_km: total increase in thresholded eligible-network usable length, including qualifying selected and pre-existing mass.",
+    "prefix_rule": "Longest complete ranked prefix whose recorded cumulative survey extent is at most the budget. No fractional ways, skipped unaffordable next ways, re-optimisation or extrapolation.",
+    "common_range": "Zero to the minimum of the three recorded final survey extents.",
+    "fairness": "Equal recorded survey distance is not equal task count or equal survey time, and the all-positive scenario is not realised yield.",
+    "recovered_preexisting_limit": "Per-prefix qualifying selected mass is not saved. Recovered-pre-existing curves cannot be obtained by subtracting selected own/survey distance from total usable gain."
+  },
+  "rounding": {
+    "source_decimal_places": 3,
+    "per_row_distance": "The main CSV contains per-row survey_km (own_km fallback), not cumulative distance. Decimal summation avoids binary-boundary errors but accumulates the exported 3-decimal rounding.",
+    "cumulative_distance": "The other CSVs supply independently rounded cumulative_survey_km; these are used directly, not reconstructed by summing own_km.",
+    "budget_boundary_limit": "Prefix membership is exact only for the recorded rounded values. A boundary or zero-distance tie may move at unrounded precision; ties do not denote genuinely free surveys.",
+    "reported_half_widths": "Assuming nearest rounding, main prefix distance has at most n × 0.0005 km rounding error; a saved cumulative distance or gain has at most 0.0005 km. These are rounding bounds, not confidence intervals."
+  },
+  "usable_km_before": 19347.56,
+  "common_max_survey_km": 486.87,
+  "common_budgets_km": [
+    0.0,
+    25.0,
+    50.0,
+    100.0,
+    250.0,
+    400.0,
+    486.87
+  ],
+  "source_artifacts": {
+    "static_initial_consolidation": {
+      "path": "results\\impact\\greece-full-strata-conditional-2026-10-09\\edit_targets.csv",
+      "sha256": "d3e49861078db2e88008b6b08a711040bf991157f2c4ad6fee873b580d08c74b"
+    },
+    "length_only": {
+      "path": "results\\impact\\greece-full-strata-conditional-2026-10-09\\edit_targets_length_baseline.csv",
+      "sha256": "54f83e52acd0e5419c8cdbeff92a1d42f85a759b5995f0c93763c8e7ff2dbb26"
+    },
+    "consolidation_per_km": {
+      "path": "results\\impact\\greece-full-strata-conditional-2026-10-09\\edit_targets_efficiency.csv",
+      "sha256": "ef3225e535d1fda7ef6f21eba308ded7ef83c0302538705f2d5e2da3866440be"
+    },
+    "summary": {
+      "path": "results\\impact\\greece-full-strata-conditional-2026-10-09\\edit_targets_summary.csv",
+      "sha256": "03b1783b1ca3ca1002a617137b8844e8b799c8e90e3077a6e678ee867a173ff8"
+    }
+  },
+  "strategies": {
+    "static_initial_consolidation": {
+      "label": "Static consolidation score",
+      "source_file": "results\\impact\\greece-full-strata-conditional-2026-10-09\\edit_targets.csv",
+      "recorded_tasks": 5000,
+      "recorded_survey_extent_km": 30907.91,
+      "recorded_cumulative_usable_gain_km": 31421.276,
+      "distance_source": "survey_km",
+      "distance_processing": "cumulative sum of per-row values",
+      "summary_survey_extent_km": 30907.915,
+      "distance_minus_summary_km": -0.005,
+      "rounded_zero_distance_steps": 0,
+      "intervention_provenance": "row field and shared summary"
+    },
+    "length_only": {
+      "label": "Length-first ordering",
+      "source_file": "results\\impact\\greece-full-strata-conditional-2026-10-09\\edit_targets_length_baseline.csv",
+      "recorded_tasks": 5000,
+      "recorded_survey_extent_km": 31273.003,
+      "recorded_cumulative_usable_gain_km": 31708.538,
+      "distance_source": "cumulative_survey_km",
+      "distance_processing": "saved cumulative distance",
+      "summary_survey_extent_km": 31273.003,
+      "distance_minus_summary_km": 0.0,
+      "rounded_zero_distance_steps": 0,
+      "intervention_provenance": "shared summary; no intervention field in this curve CSV"
+    },
+    "consolidation_per_km": {
+      "label": "Consolidation score / km",
+      "source_file": "results\\impact\\greece-full-strata-conditional-2026-10-09\\edit_targets_efficiency.csv",
+      "recorded_tasks": 5000,
+      "recorded_survey_extent_km": 486.87,
+      "recorded_cumulative_usable_gain_km": 1237.995,
+      "distance_source": "cumulative_survey_km",
+      "distance_processing": "saved cumulative distance",
+      "summary_survey_extent_km": 486.87,
+      "distance_minus_summary_km": 0.0,
+      "rounded_zero_distance_steps": 14,
+      "intervention_provenance": "shared summary; no intervention field in this curve CSV"
+    }
+  },
+  "comparisons": [
+    {
+      "budget_km": 0.0,
+      "strategies": {
+        "static_initial_consolidation": {
+          "selected_tasks": 0,
+          "last_selected_rank": 0,
+          "last_selected_way_id": null,
+          "used_survey_km": 0.0,
+          "unused_budget_km": 0.0,
+          "cumulative_usable_gain_km": 0.0,
+          "next_rank": 1,
+          "next_prefix_survey_km": 22.944,
+          "survey_rounding_half_width_km": 0.0
+        },
+        "length_only": {
+          "selected_tasks": 0,
+          "last_selected_rank": 0,
+          "last_selected_way_id": null,
+          "used_survey_km": 0.0,
+          "unused_budget_km": 0.0,
+          "cumulative_usable_gain_km": 0.0,
+          "next_rank": 1,
+          "next_prefix_survey_km": 29.474,
+          "survey_rounding_half_width_km": 0.0
+        },
+        "consolidation_per_km": {
+          "selected_tasks": 0,
+          "last_selected_rank": 0,
+          "last_selected_way_id": null,
+          "used_survey_km": 0.0,
+          "unused_budget_km": 0.0,
+          "cumulative_usable_gain_km": 0.0,
+          "next_rank": 1,
+          "next_prefix_survey_km": 0.01,
+          "survey_rounding_half_width_km": 0.0
+        }
+      }
+    },
+    {
+      "budget_km": 25.0,
+      "strategies": {
+        "static_initial_consolidation": {
+          "selected_tasks": 1,
+          "last_selected_rank": 1,
+          "last_selected_way_id": 431359828,
+          "used_survey_km": 22.944,
+          "unused_budget_km": 2.056,
+          "cumulative_usable_gain_km": 23.741,
+          "next_rank": 2,
+          "next_prefix_survey_km": 42.359,
+          "survey_rounding_half_width_km": 0.0005
+        },
+        "length_only": {
+          "selected_tasks": 0,
+          "last_selected_rank": 0,
+          "last_selected_way_id": null,
+          "used_survey_km": 0.0,
+          "unused_budget_km": 25.0,
+          "cumulative_usable_gain_km": 0.0,
+          "next_rank": 1,
+          "next_prefix_survey_km": 29.474,
+          "survey_rounding_half_width_km": 0.0
+        },
+        "consolidation_per_km": {
+          "selected_tasks": 1190,
+          "last_selected_rank": 1190,
+          "last_selected_way_id": 1136835973,
+          "used_survey_km": 24.997,
+          "unused_budget_km": 0.003,
+          "cumulative_usable_gain_km": 200.561,
+          "next_rank": 1191,
+          "next_prefix_survey_km": 25.001,
+          "survey_rounding_half_width_km": 0.0005
+        }
+      }
+    },
+    {
+      "budget_km": 50.0,
+      "strategies": {
+        "static_initial_consolidation": {
+          "selected_tasks": 2,
+          "last_selected_rank": 2,
+          "last_selected_way_id": 139118198,
+          "used_survey_km": 42.359,
+          "unused_budget_km": 7.641,
+          "cumulative_usable_gain_km": 43.721,
+          "next_rank": 3,
+          "next_prefix_survey_km": 55.067,
+          "survey_rounding_half_width_km": 0.001
+        },
+        "length_only": {
+          "selected_tasks": 1,
+          "last_selected_rank": 1,
+          "last_selected_way_id": 173720672,
+          "used_survey_km": 29.474,
+          "unused_budget_km": 20.526,
+          "cumulative_usable_gain_km": 29.474,
+          "next_rank": 2,
+          "next_prefix_survey_km": 57.513,
+          "survey_rounding_half_width_km": 0.0005
+        },
+        "consolidation_per_km": {
+          "selected_tasks": 1729,
+          "last_selected_rank": 1729,
+          "last_selected_way_id": 1490963293,
+          "used_survey_km": 49.998,
+          "unused_budget_km": 0.002,
+          "cumulative_usable_gain_km": 303.61,
+          "next_rank": 1730,
+          "next_prefix_survey_km": 50.018,
+          "survey_rounding_half_width_km": 0.0005
+        }
+      }
+    },
+    {
+      "budget_km": 100.0,
+      "strategies": {
+        "static_initial_consolidation": {
+          "selected_tasks": 4,
+          "last_selected_rank": 4,
+          "last_selected_way_id": 173720672,
+          "used_survey_km": 84.541,
+          "unused_budget_km": 15.459,
+          "cumulative_usable_gain_km": 86.191,
+          "next_rank": 5,
+          "next_prefix_survey_km": 100.934,
+          "survey_rounding_half_width_km": 0.002
+        },
+        "length_only": {
+          "selected_tasks": 3,
+          "last_selected_rank": 3,
+          "last_selected_way_id": 574209434,
+          "used_survey_km": 84.77,
+          "unused_budget_km": 15.23,
+          "cumulative_usable_gain_km": 85.288,
+          "next_rank": 4,
+          "next_prefix_survey_km": 110.844,
+          "survey_rounding_half_width_km": 0.0005
+        },
+        "consolidation_per_km": {
+          "selected_tasks": 2280,
+          "last_selected_rank": 2280,
+          "last_selected_way_id": 1110256336,
+          "used_survey_km": 99.973,
+          "unused_budget_km": 0.027,
+          "cumulative_usable_gain_km": 437.918,
+          "next_rank": 2281,
+          "next_prefix_survey_km": 100.003,
+          "survey_rounding_half_width_km": 0.0005
+        }
+      }
+    },
+    {
+      "budget_km": 250.0,
+      "strategies": {
+        "static_initial_consolidation": {
+          "selected_tasks": 15,
+          "last_selected_rank": 15,
+          "last_selected_way_id": 424096741,
+          "used_survey_km": 245.701,
+          "unused_budget_km": 4.299,
+          "cumulative_usable_gain_km": 252.371,
+          "next_rank": 16,
+          "next_prefix_survey_km": 270.278,
+          "survey_rounding_half_width_km": 0.0075
+        },
+        "length_only": {
+          "selected_tasks": 10,
+          "last_selected_rank": 10,
+          "last_selected_way_id": 112476589,
+          "used_survey_km": 249.733,
+          "unused_budget_km": 0.267,
+          "cumulative_usable_gain_km": 251.659,
+          "next_rank": 11,
+          "next_prefix_survey_km": 271.026,
+          "survey_rounding_half_width_km": 0.0005
+        },
+        "consolidation_per_km": {
+          "selected_tasks": 3616,
+          "last_selected_rank": 3616,
+          "last_selected_way_id": 140544829,
+          "used_survey_km": 249.996,
+          "unused_budget_km": 0.004,
+          "cumulative_usable_gain_km": 790.282,
+          "next_rank": 3617,
+          "next_prefix_survey_km": 250.14,
+          "survey_rounding_half_width_km": 0.0005
+        }
+      }
+    },
+    {
+      "budget_km": 400.0,
+      "strategies": {
+        "static_initial_consolidation": {
+          "selected_tasks": 23,
+          "last_selected_rank": 23,
+          "last_selected_way_id": 860141980,
+          "used_survey_km": 387.793,
+          "unused_budget_km": 12.207,
+          "cumulative_usable_gain_km": 397.284,
+          "next_rank": 24,
+          "next_prefix_survey_km": 409.426,
+          "survey_rounding_half_width_km": 0.0115
+        },
+        "length_only": {
+          "selected_tasks": 17,
+          "last_selected_rank": 17,
+          "last_selected_way_id": 460844349,
+          "used_survey_km": 395.091,
+          "unused_budget_km": 4.909,
+          "cumulative_usable_gain_km": 397.786,
+          "next_rank": 18,
+          "next_prefix_survey_km": 415.154,
+          "survey_rounding_half_width_km": 0.0005
+        },
+        "consolidation_per_km": {
+          "selected_tasks": 4574,
+          "last_selected_rank": 4574,
+          "last_selected_way_id": 189412607,
+          "used_survey_km": 399.206,
+          "unused_budget_km": 0.794,
+          "cumulative_usable_gain_km": 1094.032,
+          "next_rank": 4575,
+          "next_prefix_survey_km": 401.175,
+          "survey_rounding_half_width_km": 0.0005
+        }
+      }
+    },
+    {
+      "budget_km": 486.87,
+      "strategies": {
+        "static_initial_consolidation": {
+          "selected_tasks": 28,
+          "last_selected_rank": 28,
+          "last_selected_way_id": 546012955,
+          "used_survey_km": 479.339,
+          "unused_budget_km": 7.531,
+          "cumulative_usable_gain_km": 489.634,
+          "next_rank": 29,
+          "next_prefix_survey_km": 500.37,
+          "survey_rounding_half_width_km": 0.014
+        },
+        "length_only": {
+          "selected_tasks": 21,
+          "last_selected_rank": 21,
+          "last_selected_way_id": 28548404,
+          "used_survey_km": 474.787,
+          "unused_budget_km": 12.083,
+          "cumulative_usable_gain_km": 481.094,
+          "next_rank": 22,
+          "next_prefix_survey_km": 494.288,
+          "survey_rounding_half_width_km": 0.0005
+        },
+        "consolidation_per_km": {
+          "selected_tasks": 5000,
+          "last_selected_rank": 5000,
+          "last_selected_way_id": 470107394,
+          "used_survey_km": 486.87,
+          "unused_budget_km": 0.0,
+          "cumulative_usable_gain_km": 1237.995,
+          "next_rank": null,
+          "next_prefix_survey_km": null,
+          "survey_rounding_half_width_km": 0.0005
+        }
+      }
+    }
+  ]
+}

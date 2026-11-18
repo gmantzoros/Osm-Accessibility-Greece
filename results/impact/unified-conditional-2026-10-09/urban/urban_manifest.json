@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "model_version": "conditional-2026-10-09",
+  "producer": "urban",
+  "source_sha256": {
+    "results/impact/greece-full-strata-conditional-2026-10-09/run_manifest.json": "59f84506e7c8c2139bed2da94df41a272ec24602173374578c98fcda32a61698",
+    "results/impact/greece-full-strata-conditional-2026-10-09/feasibility.csv": "167cd6f6628033d1085394476d9b076ad39d773c7765e39fffa20da41cfe3214",
+    "results/impact/greece-full-strata-conditional-2026-10-09/crossing_metrics.csv": "90f5f3d66a3d17179531e644c57011d18d5dae1e4c1380a29fb56fda0ec4414f",
+    "results/impact/greece-full-strata-conditional-2026-10-09/summary.csv": "e500e8145ce1776a1cd0c724423eb366b34de6a6e9ba26531cd95fb455e1258c",
+    "results/impact/greece-full-strata-conditional-2026-10-09/destinations.csv": "461e27ede6a45c5076a466babf5bf31a62cd5dd5f16dd831442dee40a43e2b0e",
+    "data/boundaries/municipalities.csv": "8d41ca475f8541db419675f37222c4cbd127ef227d32e3a30dd5cd5a43049829",
+    "analysis/urban_scope.py": "a63ab795fc75afde5d0b79c12ad69cc863485a91cbf7322dd69de4376ccdfa23"
+  },
+  "output_sha256": {
+    "results/impact/unified-conditional-2026-10-09/urban/top_cities.csv": "c9c7dc79cab94c2d98ae4bd81abeccd0087eabb6fcf71af41bee03a4d8a22321",
+    "results/impact/unified-conditional-2026-10-09/urban/scope_laus.json": "dc5a14d517871b45864373e368481b3615d8cbad600a8a4c153ac782be5faaa5",
+    "results/impact/unified-conditional-2026-10-09/urban/urban_summary.json": "7df8b7dc099a42a9aa022fa7f4622e44f3f50512a64382a11a47895ae04c354f"
+  }
+}

@@ -1,0 +1,37 @@
+covariate,metric,spearman_rho,n
+population,pessimistic usable %,0.253,20
+population,decidability gap,-0.226,20
+population,crossings /100 ix,0.343,20
+population,tactile % of crossings,-0.077,20
+population,crossings /100 degree-three junctions,0.359,20
+population,signals with sound statement %,0.239,20
+population,name completeness %,0.42,20
+population,sidewalk tag %,-0.126,20
+population,BPRI v1,0.079,20
+area,pessimistic usable %,0.098,20
+area,decidability gap,0.197,20
+area,crossings /100 ix,0.182,20
+area,tactile % of crossings,-0.286,20
+area,crossings /100 degree-three junctions,0.159,20
+area,signals with sound statement %,0.244,20
+area,name completeness %,0.017,20
+area,sidewalk tag %,-0.63,20
+area,BPRI v1,-0.378,20
+density,pessimistic usable %,0.398,20
+density,decidability gap,-0.617,20
+density,crossings /100 ix,0.272,20
+density,tactile % of crossings,0.525,20
+density,crossings /100 degree-three junctions,0.304,20
+density,signals with sound statement %,0.057,20
+density,name completeness %,0.439,20
+density,sidewalk tag %,0.605,20
+density,BPRI v1,0.742,20
+road km / 1000 pop,pessimistic usable %,-0.281,20
+road km / 1000 pop,decidability gap,0.537,20
+road km / 1000 pop,crossings /100 ix,-0.32,20
+road km / 1000 pop,tactile % of crossings,-0.164,20
+road km / 1000 pop,crossings /100 degree-three junctions,-0.326,20
+road km / 1000 pop,signals with sound statement %,-0.433,20
+road km / 1000 pop,name completeness %,-0.167,20
+road km / 1000 pop,sidewalk tag %,-0.414,20
+road km / 1000 pop,BPRI v1,-0.365,20

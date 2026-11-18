@@ -1,0 +1,528 @@
+{
+  "inputs": [
+    {
+      "country": "Greece",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\greece\\ee56a13d9d45a866afe0699021123bfe718020e05eb8da3a93922c139c0507b3.json",
+        "sha256": "ee56a13d9d45a866afe0699021123bfe718020e05eb8da3a93922c139c0507b3"
+      },
+      "path": "data\\greece-latest.osm.pbf",
+      "content": {
+        "bytes": 339776310,
+        "sha256": "7f973ac69ac39e8a91999e49342de1d9986b70017ca41bc1f5107f573fa101b0",
+        "md5": "2eaed090e58af6ad0aa664097f1b80aa"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787775735,
+        "replication_timestamp_utc": "2026-08-26T20:22:15+00:00",
+        "replication_sequence": 4891,
+        "replication_base_url": "https://download.geofabrik.de/europe/greece-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": "https://download.geofabrik.de/europe/greece-latest.osm.pbf",
+      "source_status": "recorded download URL",
+      "legacy_snapshot_record": "content checksum matched"
+    },
+    {
+      "country": "Ireland",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\ireland\\5082232b7ff253400c24c330e5df4458f5f2238020ff57074e1adbdd41028f93.json",
+        "sha256": "5082232b7ff253400c24c330e5df4458f5f2238020ff57074e1adbdd41028f93"
+      },
+      "path": "data\\countries\\ireland-latest.osm.pbf",
+      "content": {
+        "bytes": 370542910,
+        "sha256": "e2baeacb4fecf0630c7cd7e66e0d1045bce74a501db7b1cc206b9bb673188872",
+        "md5": "e773b84c6b2720e0761531eaa564a9a4"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787967185,
+        "replication_timestamp_utc": "2026-08-29T01:33:05+00:00",
+        "replication_sequence": 7263172,
+        "replication_base_url": "http://dev.download.openstreetmap.fr/replication/./europe/ireland/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Portugal",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\portugal\\8d2338d38f4e20149bcbd306203f5e671997d05e523cd65f468f220265bc5405.json",
+        "sha256": "8d2338d38f4e20149bcbd306203f5e671997d05e523cd65f468f220265bc5405"
+      },
+      "path": "data\\countries\\portugal-latest.osm.pbf",
+      "content": {
+        "bytes": 472683574,
+        "sha256": "345230994122d7b158eaaf25e005be50720ab262e05570cc00cc38ff09de0e87",
+        "md5": "90d194ddd770249c90387641e7cbff26"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787967126,
+        "replication_timestamp_utc": "2026-08-29T01:32:06+00:00",
+        "replication_sequence": 7263171,
+        "replication_base_url": "http://dev.download.openstreetmap.fr/replication/./europe/portugal/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Slovakia",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\slovakia\\7186b3fa84611c616a6852a93bb2e23e879ecef7700e69d3eca4db5701869c74.json",
+        "sha256": "7186b3fa84611c616a6852a93bb2e23e879ecef7700e69d3eca4db5701869c74"
+      },
+      "path": "data\\countries\\slovakia-latest.osm.pbf",
+      "content": {
+        "bytes": 390864534,
+        "sha256": "d0091afcbabeb51f6852b8dc64f214759514774a5dcc2d45d33e9800f02ee023",
+        "md5": "1e9a12505bdcae849c5c31b0ddaee460"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787967126,
+        "replication_timestamp_utc": "2026-08-29T01:32:06+00:00",
+        "replication_sequence": 7263171,
+        "replication_base_url": "http://dev.download.openstreetmap.fr/replication/./europe/slovakia/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Denmark",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\denmark\\42bd17df01717097cd7d40e8ea3fd48d87bd86e4287edd6d51877074297c1b06.json",
+        "sha256": "42bd17df01717097cd7d40e8ea3fd48d87bd86e4287edd6d51877074297c1b06"
+      },
+      "path": "data\\countries\\denmark-latest.osm.pbf",
+      "content": {
+        "bytes": 542682585,
+        "sha256": "9af929f5f01301159fbe3015916412ec8dcf7c42129aeb8d90d1611462d10b62",
+        "md5": "b6d3ca304af1c5feae94c96c4b7e03ec"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787967981,
+        "replication_timestamp_utc": "2026-08-29T01:46:21+00:00",
+        "replication_sequence": 7263185,
+        "replication_base_url": "http://download.openstreetmap.fr/replication/./europe/denmark/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Finland",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\finland\\0e399859c329e76ec9c6332eab5d999423d9fe67e1e6fb675f588eefb43f3e64.json",
+        "sha256": "0e399859c329e76ec9c6332eab5d999423d9fe67e1e6fb675f588eefb43f3e64"
+      },
+      "path": "data\\countries\\finland-latest.osm.pbf",
+      "content": {
+        "bytes": 815364851,
+        "sha256": "27f7e55b60aa32726aef844de2dd807f640ca98d8504493805ab93943f359902",
+        "md5": "b9c320afe2f831d652018d92cf0c8fcd"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787968340,
+        "replication_timestamp_utc": "2026-08-29T01:52:20+00:00",
+        "replication_sequence": 7263191,
+        "replication_base_url": "http://dev.download.openstreetmap.fr/replication/./europe/finland/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Belgium",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\belgium\\1a735bf315ade3421b3107b593129e9b75b1249c7a1e3a89578890f455dea503.json",
+        "sha256": "1a735bf315ade3421b3107b593129e9b75b1249c7a1e3a89578890f455dea503"
+      },
+      "path": "data\\countries\\belgium-latest.osm.pbf",
+      "content": {
+        "bytes": 817266127,
+        "sha256": "cb70cfb9a2c7ea9bf431e8f0b88f11f12a971f89dc859a785d7cc766a4c16205",
+        "md5": "e27edb28039935e60813d6295e83d476"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787967920,
+        "replication_timestamp_utc": "2026-08-29T01:45:20+00:00",
+        "replication_sequence": 7263184,
+        "replication_base_url": "http://dev.download.openstreetmap.fr/replication/./europe/belgium/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Austria",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\austria\\5da3aa24d46c0e64b489372da4097fbf3645004a087db6d68be7bcb78b8a7d4d.json",
+        "sha256": "5da3aa24d46c0e64b489372da4097fbf3645004a087db6d68be7bcb78b8a7d4d"
+      },
+      "path": "data\\countries\\austria-latest.osm.pbf",
+      "content": {
+        "bytes": 964321177,
+        "sha256": "30d9e0ca4c11d4b51a632caaaf1ee91e67fddce7fd4053ffe4bd8586598f38b3",
+        "md5": "ab90efcffd2a7fff0508194341bbf465"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787965956,
+        "replication_timestamp_utc": "2026-08-29T01:12:36+00:00",
+        "replication_sequence": 7263152,
+        "replication_base_url": "http://dev.download.openstreetmap.fr/replication/./europe/austria/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Sweden",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\sweden\\dcbc3d0ed56f68b3c904c9ad3ce6d9840c0ea5319cb0a11bdf327ddc838f4da8.json",
+        "sha256": "dcbc3d0ed56f68b3c904c9ad3ce6d9840c0ea5319cb0a11bdf327ddc838f4da8"
+      },
+      "path": "data\\countries\\sweden-latest.osm.pbf",
+      "content": {
+        "bytes": 904693130,
+        "sha256": "959b986cf5a5d571c67194221de31f2415b2b436676a498f2191e5e63c552494",
+        "md5": "296602924f65abbc1f2e8f59c39a15db"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787965956,
+        "replication_timestamp_utc": "2026-08-29T01:12:36+00:00",
+        "replication_sequence": 7263152,
+        "replication_base_url": "http://dev.download.openstreetmap.fr/replication/./europe/sweden/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Czechia",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\czech_republic\\5f3bd52329e3dffb6000bfecb78fc57df823c4d48f8c2d939d07ed7a92b10605.json",
+        "sha256": "5f3bd52329e3dffb6000bfecb78fc57df823c4d48f8c2d939d07ed7a92b10605"
+      },
+      "path": "data\\countries\\czech_republic-latest.osm.pbf",
+      "content": {
+        "bytes": 1082589546,
+        "sha256": "ee4ca35a7a7f56f988a1f745035f310dc0a8600f31f6e083836e7682c0c8a862",
+        "md5": "dae0035c9f8f3c90cac60c3a0edc5474"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787967981,
+        "replication_timestamp_utc": "2026-08-29T01:46:21+00:00",
+        "replication_sequence": 7263185,
+        "replication_base_url": "http://download.openstreetmap.fr/replication/./europe/czech_republic/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Netherlands",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\netherlands\\08e37d44184f15224e6b3e1fdc5c0b9ba8760cf8557fb0d67616c0742ac23136.json",
+        "sha256": "08e37d44184f15224e6b3e1fdc5c0b9ba8760cf8557fb0d67616c0742ac23136"
+      },
+      "path": "data\\countries\\netherlands-latest.osm.pbf",
+      "content": {
+        "bytes": 1628389837,
+        "sha256": "339ac64b348faf401c87a084378b124785818951a299a38492610a0a8122e791",
+        "md5": "4b69fd090933e1f78516e0f95867e820"
+      },
+      "osm_header": {
+        "replication_timestamp": 1787967981,
+        "replication_timestamp_utc": "2026-08-29T01:46:21+00:00",
+        "replication_sequence": 7263185,
+        "replication_base_url": "http://download.openstreetmap.fr/replication/./europe/netherlands/minute",
+        "writing_program": "pyosmium-up-to-date/3.6.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Bulgaria",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\bulgaria\\4eb629c08d356d2476e524611ddcba98666f8a1b730e73d8236f02945e740d63.json",
+        "sha256": "4eb629c08d356d2476e524611ddcba98666f8a1b730e73d8236f02945e740d63"
+      },
+      "path": "data\\countries\\bulgaria-latest.osm.pbf",
+      "content": {
+        "bytes": 172900926,
+        "sha256": "3ddc1237fab5483148cc5bd1a0084ee351bf71c59a9f0ccdd74c907ba5ad070d",
+        "md5": "9ec8b4594b74fc52b77d6dde236b0ffb"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4901,
+        "replication_base_url": "https://download.geofabrik.de/europe/bulgaria-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Croatia",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\croatia\\d7d26ab7599358f1c84b18232923189e21d8fc553795e2bf4695df295be508dc.json",
+        "sha256": "d7d26ab7599358f1c84b18232923189e21d8fc553795e2bf4695df295be508dc"
+      },
+      "path": "data\\countries\\croatia-latest.osm.pbf",
+      "content": {
+        "bytes": 199234748,
+        "sha256": "c5439ef64baa01290a4e3df40963e33f3a0c82229b3ccb3996807ae40f631b6c",
+        "md5": "09740742b52ebd69a3bbafdd35deee2b"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4899,
+        "replication_base_url": "https://download.geofabrik.de/europe/croatia-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Hungary",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\hungary\\5426a67ab6e4a58d3f09d11b0c1ca861683404907efb1ec273d8d493de5218a4.json",
+        "sha256": "5426a67ab6e4a58d3f09d11b0c1ca861683404907efb1ec273d8d493de5218a4"
+      },
+      "path": "data\\countries\\hungary-latest.osm.pbf",
+      "content": {
+        "bytes": 323669539,
+        "sha256": "316b2760b7a2a65a7d9c5ce1193e1820502130a3af5ec03dc390ef048a104318",
+        "md5": "8d0ee121b16fa3cd4d07b844e5e637ac"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4899,
+        "replication_base_url": "https://download.geofabrik.de/europe/hungary-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Romania",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\romania\\ad4d1a8804ef295debcd76fbac212974e6d8e957aa5ac7292a1bf0f19e3821a4.json",
+        "sha256": "ad4d1a8804ef295debcd76fbac212974e6d8e957aa5ac7292a1bf0f19e3821a4"
+      },
+      "path": "data\\countries\\romania-latest.osm.pbf",
+      "content": {
+        "bytes": 327292703,
+        "sha256": "77f8ecc0d62f0e5fb283425e1eaa984b68f61c7ee0f6143fd1310474769b9d97",
+        "md5": "8b14e41b639c33c00b204c46269f13ee"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4898,
+        "replication_base_url": "https://download.geofabrik.de/europe/romania-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Cyprus",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\cyprus\\0cb371ae9eb80f02cbdb5875d2e6631fa6cc3295455e81d0ec98f7587e0b5b53.json",
+        "sha256": "0cb371ae9eb80f02cbdb5875d2e6631fa6cc3295455e81d0ec98f7587e0b5b53"
+      },
+      "path": "data\\countries\\cyprus-latest.osm.pbf",
+      "content": {
+        "bytes": 37215007,
+        "sha256": "bc82edd42b3dd48c9128980d56e721467f054fb03343468d87c986fa5cbd21e3",
+        "md5": "886a0d1d6bb5bbd745713008e0130f62"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4901,
+        "replication_base_url": "https://download.geofabrik.de/europe/cyprus-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Albania",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\albania\\662047ef3afbea21a9a81a98f330896f166fbad9f274bfb2b5037bbbd20460ce.json",
+        "sha256": "662047ef3afbea21a9a81a98f330896f166fbad9f274bfb2b5037bbbd20460ce"
+      },
+      "path": "data\\countries\\albania-latest.osm.pbf",
+      "content": {
+        "bytes": 53959247,
+        "sha256": "dcd03181b2e971c4b9b13d05ab4bc89a9686ca4f0a4fb941160cc82393996ae1",
+        "md5": "6f9c4116b71caf38ff0c096adaa34c20"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4899,
+        "replication_base_url": "https://download.geofabrik.de/europe/albania-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Serbia",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\serbia\\34b3dd5238a1ba80279565688fa45818035e4a249fb775d89fadd93aa22d9bda.json",
+        "sha256": "34b3dd5238a1ba80279565688fa45818035e4a249fb775d89fadd93aa22d9bda"
+      },
+      "path": "data\\countries\\serbia-latest.osm.pbf",
+      "content": {
+        "bytes": 239209899,
+        "sha256": "3259634097d733bd589bdeb344e19e301b8e43ce4763f57e7986fd49f3191def",
+        "md5": "0b7413790c8b71bfbd4770ece3499e42"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4901,
+        "replication_base_url": "https://download.geofabrik.de/europe/serbia-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Spain",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\spain\\d7d85d3fcfc6c38798fb166730446716afe5981c18006ddd532045ddfd29fdc2.json",
+        "sha256": "d7d85d3fcfc6c38798fb166730446716afe5981c18006ddd532045ddfd29fdc2"
+      },
+      "path": "data\\countries\\spain-latest.osm.pbf",
+      "content": {
+        "bytes": 1478201898,
+        "sha256": "eb3529980844d2bd3f4fd3f3b7ad77116fc1a1fa672daa03ed78594794cdbdba",
+        "md5": "84d86f5a3944ca6531d0e057a3cdd8d5"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4899,
+        "replication_base_url": "https://download.geofabrik.de/europe/spain-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    },
+    {
+      "country": "Italy",
+      "immutable_manifest": {
+        "path": "results\\impact\\unified-conditional-2026-10-09\\countries\\input_manifests\\italy\\a52b32cd66b9cb85aee665ddab21def5770f29b9ec69f22e84eec65376e1e747.json",
+        "sha256": "a52b32cd66b9cb85aee665ddab21def5770f29b9ec69f22e84eec65376e1e747"
+      },
+      "path": "data\\countries\\italy-latest.osm.pbf",
+      "content": {
+        "bytes": 2225657605,
+        "sha256": "91ada7bb1279ab145ea7664b0434a6093587fcb206446d954c51df345aed560a",
+        "md5": "37d1e35dc394d2531b245fc0a6c053c5"
+      },
+      "osm_header": {
+        "replication_timestamp": 1788466911,
+        "replication_timestamp_utc": "2026-09-03T20:21:51+00:00",
+        "replication_sequence": 4899,
+        "replication_base_url": "https://download.geofabrik.de/europe/italy-updates",
+        "writing_program": "osmium/1.16.0",
+        "source": "",
+        "timestamp_note": "OSMHeader replication timestamp; missing is unknown, never inferred from filename/mtime"
+      },
+      "source_url": null,
+      "source_status": "cached content; original download source unverified",
+      "legacy_snapshot_record": "not available"
+    }
+  ],
+  "excluded_or_failed": [],
+  "requested_slugs": [
+    "greece",
+    "ireland",
+    "portugal",
+    "slovakia",
+    "denmark",
+    "finland",
+    "belgium",
+    "austria",
+    "sweden",
+    "czech_republic",
+    "netherlands",
+    "bulgaria",
+    "croatia",
+    "hungary",
+    "romania",
+    "cyprus",
+    "albania",
+    "serbia",
+    "spain",
+    "italy"
+  ],
+  "covariates": "GISCO population fields; reference years unverified"
+}

@@ -1,0 +1,5 @@
+layer,assigned_drivable_km,national_drivable_km,unassigned_drivable_km,assigned_crossings,national_crossings,unassigned_crossings,assignment,model_version
+circle,18406.669,250210.874,231804.206,12946,20931,7985,whole_way_middle_node,conditional-2026-10-09
+municipality,248671.013,250210.874,1539.862,20741,20931,190,whole_way_middle_node,conditional-2026-10-09
+nuts3,248515.694,250210.874,1695.180,20717,20931,214,whole_way_middle_node,conditional-2026-10-09
+region,248515.694,250210.874,1695.180,20717,20931,214,whole_way_middle_node,conditional-2026-10-09

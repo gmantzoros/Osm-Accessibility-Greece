@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "model_version": "conditional-2026-10-09",
+  "producer": "aggregate",
+  "source_sha256": {
+    "results/impact/greece-full-strata-conditional-2026-10-09/run_manifest.json": "59f84506e7c8c2139bed2da94df41a272ec24602173374578c98fcda32a61698",
+    "results/impact/greece-full-strata-conditional-2026-10-09/summary.csv": "e500e8145ce1776a1cd0c724423eb366b34de6a6e9ba26531cd95fb455e1258c",
+    "results/impact/greece-full-strata-conditional-2026-10-09/crossing_metrics.csv": "90f5f3d66a3d17179531e644c57011d18d5dae1e4c1380a29fb56fda0ec4414f",
+    "results/impact/greece-full-strata-conditional-2026-10-09/way_metrics.csv": "b27ba81c1b8ae5d61e60fffc5a4c25fb4efbc969ed1d526118f528e6a142a68c",
+    "data/boundaries/municipalities.csv": "8d41ca475f8541db419675f37222c4cbd127ef227d32e3a30dd5cd5a43049829",
+    "analysis/aggregate.py": "2ae2842b07c0924eeb06aaea9195d29d0bb66fda77a6a6460090494b58163431"
+  },
+  "output_sha256": {
+    "results/impact/unified-conditional-2026-10-09/analysis/spatial_coverage.csv": "5de9f5dc15073f7c9876c16cf6f3c66afaf86b4c6036ac5f39fbeca97fecb5f5",
+    "results/impact/unified-conditional-2026-10-09/analysis/by_dimos.csv": "f7a8d1b84ccbc97f3712635570576888df5592913aa99e62f9b3bcb310a903e2",
+    "results/impact/unified-conditional-2026-10-09/analysis/by_urbanisation.csv": "73eccf22e8ff57b2300aed5d037502d0eb36f82b510352b911e15fcdc796c20a",
+    "results/impact/unified-conditional-2026-10-09/analysis/by_region.csv": "908fd9428ac9bd8e15f2f0af036b3342e75cb13403b24a1dd8e2c59c066d1ac8",
+    "results/impact/unified-conditional-2026-10-09/analysis/by_nuts3.csv": "72375520634f7c151adacb61a5e228f119a5ab34e03a3ef43eb0c8a030eb5f74"
+  }
+}

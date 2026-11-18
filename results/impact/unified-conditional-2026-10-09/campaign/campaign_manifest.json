@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "model_version": "conditional-2026-10-09",
+  "producer": "campaign",
+  "source_sha256": {
+    "results/impact/greece-full-strata-conditional-2026-10-09/run_manifest.json": "59f84506e7c8c2139bed2da94df41a272ec24602173374578c98fcda32a61698",
+    "results/impact/greece-full-strata-conditional-2026-10-09/edit_targets.csv": "d3e49861078db2e88008b6b08a711040bf991157f2c4ad6fee873b580d08c74b",
+    "results/impact/greece-full-strata-conditional-2026-10-09/edit_targets_summary.csv": "03b1783b1ca3ca1002a617137b8844e8b799c8e90e3077a6e678ee867a173ff8",
+    "analysis/campaign.py": "a00fb1ff95f49deebdd45cf7eed663026178a33da9d909d38c0eece6732a8602"
+  },
+  "output_sha256": {
+    "results/impact/unified-conditional-2026-10-09/campaign/campaign_cost.csv": "b93233680ccfa9617e5994abf49446d9c17cd01234fbb65d0be864493bbfb831",
+    "results/impact/unified-conditional-2026-10-09/campaign/campaign_by_place.csv": "710e3cde54a7d762a6df5829fdb0a36b78f2a3612de83f40eec21832c079a5d1",
+    "results/impact/unified-conditional-2026-10-09/campaign/campaign_summary.json": "93b9b8176ebe99ed73a8fd2fc3a3e098c9a8692a42cc0472f3deed8ab28a63ca",
+    "results/impact/unified-conditional-2026-10-09/campaign/maproulette_challenge.json": "13283c2dbf420b3dff0e42d980eb1baf0a8f9d532e1810647e0c20d18ec67a4c",
+    "results/impact/unified-conditional-2026-10-09/campaign/maproulette_tasks.geojson": "2e54bca03cbd7d55925778d887ca0fec0bf7f6e7bc589d31af704dd1f6532315"
+  }
+}

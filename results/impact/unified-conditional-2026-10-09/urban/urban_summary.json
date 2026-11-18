@@ -1,0 +1,668 @@
+{
+ "top_n": 50,
+ "selected_dimoi": 50,
+ "dimoi_with_eligible_network": 50,
+ "primary_denominator": "eligible nonauxiliary length; threshold uses eligible component mass",
+ "population_provenance": "GISCO POP_2021 historical weights; per-LAU year unverified",
+ "descriptive_scope": "all assigned LAUs in selected dimos-prefix groups",
+ "audit_scope": "one principal LAU per selected dimos-prefix group",
+ "selection_limitation": "Population-selected frame, not all urban Greece; rural outcomes remain meaningful.",
+ "coverage": {
+  "population": 5378490,
+  "population_pct": 49.72584859534964,
+  "walkable_km": 71767.1,
+  "eligible_km": 46779.897,
+  "eligible_pct": 17.33550333203708,
+  "walkable_pct": 14.807537684158063,
+  "crossings": 14018,
+  "crossings_pct": 66.97243323300368,
+  "tactile": 293,
+  "tactile_pct": 68.94117647058823,
+  "sound": 343,
+  "sound_pct": 83.25242718446601
+ },
+ "variance": [
+  {
+   "metric": "Pessimistic usable %",
+   "min": 0.812,
+   "p25": 4.022,
+   "median": 6.566,
+   "p75": 12.923,
+   "max": 25.705,
+   "zeros": 0,
+   "n": 50
+  },
+  {
+   "metric": "Decidability gap (pts)",
+   "min": 63.518,
+   "p25": 80.623,
+   "median": 89.047,
+   "p75": 92.504,
+   "max": 97.303,
+   "zeros": 0,
+   "n": 50
+  },
+  {
+   "metric": "Crossings per 100 intersections",
+   "min": 0.288,
+   "p25": 1.873,
+   "median": 4.896,
+   "p75": 8.357,
+   "max": 56.109,
+   "zeros": 0,
+   "n": 50
+  },
+  {
+   "metric": "Name completeness %",
+   "min": 21.15,
+   "p25": 35.32,
+   "median": 70.24,
+   "p75": 85.5,
+   "max": 97.21,
+   "zeros": 0,
+   "n": 50
+  },
+  {
+   "metric": "Tactile % of crossings",
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 0.885,
+   "p75": 2.642,
+   "max": 29.787,
+   "zeros": 18,
+   "n": 50
+  },
+  {
+   "metric": "Signals with sound statement %",
+   "min": 0.0,
+   "p25": 0.0,
+   "median": 1.72,
+   "p75": 4.88,
+   "max": 25.64,
+   "zeros": 20,
+   "n": 50
+  }
+ ],
+ "attica": {
+  "attica": {
+   "n": 22,
+   "n_eligible": 22,
+   "guaranteed": 10.406500000000001,
+   "pessimistic_usable_pct": 10.406500000000001,
+   "gap": 88.18549999999999,
+   "crossings_per_100_ix": 8.5495,
+   "name_pct": 88.485,
+   "pop": 2443588
+  },
+  "rest": {
+   "n": 28,
+   "n_eligible": 28,
+   "guaranteed": 5.948,
+   "pessimistic_usable_pct": 5.948,
+   "gap": 90.1395,
+   "crossings_per_100_ix": 2.5585,
+   "name_pct": 38.515,
+   "pop": 2934902
+  }
+ },
+ "cities": [
+  {
+   "name": "Ψευδοκοινοτητα Αθηναιων",
+   "pop_2021": 664046,
+   "pess_usable_pct": 22.073,
+   "gap_pct": 74.629,
+   "crossings_per_100_ix": 17.999,
+   "name_pct": 89.46,
+   "tactile_crossings": 25,
+   "sound_pct": 7.37
+  },
+  {
+   "name": "Ψευδοκοινοτητα Θεσσαλονικης",
+   "pop_2021": 325182,
+   "pess_usable_pct": 19.161,
+   "gap_pct": 78.047,
+   "crossings_per_100_ix": 19.762,
+   "name_pct": 83.53,
+   "tactile_crossings": 42,
+   "sound_pct": 18.08
+  },
+  {
+   "name": "Ψευδοκοινοτητα Πατρεων",
+   "pop_2021": 213984,
+   "pess_usable_pct": 5.892,
+   "gap_pct": 91.642,
+   "crossings_per_100_ix": 1.582,
+   "name_pct": 49.53,
+   "tactile_crossings": 2,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Ηρακλειου",
+   "pop_2021": 173993,
+   "pess_usable_pct": 1.931,
+   "gap_pct": 94.878,
+   "crossings_per_100_ix": 1.938,
+   "name_pct": 49.44,
+   "tactile_crossings": 0,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Πειραιως",
+   "pop_2021": 163688,
+   "pess_usable_pct": 6.566,
+   "gap_pct": 89.047,
+   "crossings_per_100_ix": 17.917,
+   "name_pct": 84.99,
+   "tactile_crossings": 3,
+   "sound_pct": 0.47
+  },
+  {
+   "name": "Ψευδοκοινοτητα Λαρισαιων",
+   "pop_2021": 162591,
+   "pess_usable_pct": 6.004,
+   "gap_pct": 89.602,
+   "crossings_per_100_ix": 3.179,
+   "name_pct": 46.14,
+   "tactile_crossings": 10,
+   "sound_pct": 1.82
+  },
+  {
+   "name": "Κοινότητα Βόλου",
+   "pop_2021": 144449,
+   "pess_usable_pct": 10.323,
+   "gap_pct": 87.209,
+   "crossings_per_100_ix": 1.17,
+   "name_pct": 46.13,
+   "tactile_crossings": 2,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Περιστεριου",
+   "pop_2021": 139981,
+   "pess_usable_pct": 1.829,
+   "gap_pct": 97.303,
+   "crossings_per_100_ix": 3.04,
+   "name_pct": 94.37,
+   "tactile_crossings": 1,
+   "sound_pct": 4.88
+  },
+  {
+   "name": "Κοινότητα Ρόδου",
+   "pop_2021": 115490,
+   "pess_usable_pct": 6.421,
+   "gap_pct": 87.256,
+   "crossings_per_100_ix": 3.566,
+   "name_pct": 30.32,
+   "tactile_crossings": 5,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Ιωαννιτών",
+   "pop_2021": 112486,
+   "pess_usable_pct": 5.129,
+   "gap_pct": 91.954,
+   "crossings_per_100_ix": 1.558,
+   "name_pct": 34.46,
+   "tactile_crossings": 0,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Χανίων",
+   "pop_2021": 108642,
+   "pess_usable_pct": 10.361,
+   "gap_pct": 73.025,
+   "crossings_per_100_ix": 1.873,
+   "name_pct": 32.47,
+   "tactile_crossings": 2,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Αχαρνών",
+   "pop_2021": 106943,
+   "pess_usable_pct": 13.559,
+   "gap_pct": 80.623,
+   "crossings_per_100_ix": 5.128,
+   "name_pct": 66.05,
+   "tactile_crossings": 0,
+   "sound_pct": 2.38
+  },
+  {
+   "name": "Κοινότητα Νικαίας",
+   "pop_2021": 105430,
+   "pess_usable_pct": 5.355,
+   "gap_pct": 89.136,
+   "crossings_per_100_ix": 8.952,
+   "name_pct": 77.8,
+   "tactile_crossings": 0,
+   "sound_pct": 2.11
+  },
+  {
+   "name": "Κοινότητα Χαλκιδέων",
+   "pop_2021": 102223,
+   "pess_usable_pct": 3.096,
+   "gap_pct": 95.788,
+   "crossings_per_100_ix": 0.288,
+   "name_pct": 31.3,
+   "tactile_crossings": 1,
+   "sound_pct": 12.12
+  },
+  {
+   "name": "Κοινότητα Ευόσμου",
+   "pop_2021": 101753,
+   "pess_usable_pct": 0.812,
+   "gap_pct": 96.086,
+   "crossings_per_100_ix": 4.83,
+   "name_pct": 75.35,
+   "tactile_crossings": 4,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Καλλιθεας",
+   "pop_2021": 100641,
+   "pess_usable_pct": 8.773,
+   "gap_pct": 89.775,
+   "crossings_per_100_ix": 11.886,
+   "name_pct": 90.97,
+   "tactile_crossings": 2,
+   "sound_pct": 1.52
+  },
+  {
+   "name": "Κοινότητα Σταυρουπόλεως",
+   "pop_2021": 99245,
+   "pess_usable_pct": 5.193,
+   "gap_pct": 92.504,
+   "crossings_per_100_ix": 6.532,
+   "name_pct": 70.24,
+   "tactile_crossings": 18,
+   "sound_pct": 6.4
+  },
+  {
+   "name": "Κοινότητα Αγρινίου",
+   "pop_2021": 94181,
+   "pess_usable_pct": 1.105,
+   "gap_pct": 96.094,
+   "crossings_per_100_ix": 1.434,
+   "name_pct": 21.15,
+   "tactile_crossings": 0,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Καλαμαριας",
+   "pop_2021": 91518,
+   "pess_usable_pct": 1.784,
+   "gap_pct": 93.466,
+   "crossings_per_100_ix": 15.416,
+   "name_pct": 82.21,
+   "tactile_crossings": 7,
+   "sound_pct": 2.35
+  },
+  {
+   "name": "Κοινότητα Κερατσινίου",
+   "pop_2021": 91045,
+   "pess_usable_pct": 1.126,
+   "gap_pct": 96.762,
+   "crossings_per_100_ix": 5.748,
+   "name_pct": 83.52,
+   "tactile_crossings": 0,
+   "sound_pct": 2.63
+  },
+  {
+   "name": "Ψευδοκοινοτητα Γλυφαδας",
+   "pop_2021": 87305,
+   "pess_usable_pct": 10.249,
+   "gap_pct": 88.259,
+   "crossings_per_100_ix": 13.507,
+   "name_pct": 88.53,
+   "tactile_crossings": 5,
+   "sound_pct": 1.6
+  },
+  {
+   "name": "Κοινότητα Κατερίνης",
+   "pop_2021": 85851,
+   "pess_usable_pct": 4.542,
+   "gap_pct": 93.835,
+   "crossings_per_100_ix": 8.357,
+   "name_pct": 37.49,
+   "tactile_crossings": 55,
+   "sound_pct": 4.59
+  },
+  {
+   "name": "Ψευδοκοινοτητα Ιλιου",
+   "pop_2021": 84793,
+   "pess_usable_pct": 10.564,
+   "gap_pct": 88.112,
+   "crossings_per_100_ix": 6.842,
+   "name_pct": 90.56,
+   "tactile_crossings": 0,
+   "sound_pct": 7.06
+  },
+  {
+   "name": "Κοινότητα Συκεών",
+   "pop_2021": 84741,
+   "pess_usable_pct": 11.205,
+   "gap_pct": 88.067,
+   "crossings_per_100_ix": 6.177,
+   "name_pct": 89.27,
+   "tactile_crossings": 0,
+   "sound_pct": 2.17
+  },
+  {
+   "name": "Κοινότητα Τρικκαίων",
+   "pop_2021": 81355,
+   "pess_usable_pct": 2.458,
+   "gap_pct": 96.703,
+   "crossings_per_100_ix": 1.078,
+   "name_pct": 26.78,
+   "tactile_crossings": 4,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Ηλιουπολεως",
+   "pop_2021": 78153,
+   "pess_usable_pct": 13.612,
+   "gap_pct": 63.518,
+   "crossings_per_100_ix": 56.109,
+   "name_pct": 97.21,
+   "tactile_crossings": 0,
+   "sound_pct": 10.0
+  },
+  {
+   "name": "Κοινότητα Σερρών",
+   "pop_2021": 76817,
+   "pess_usable_pct": 18.056,
+   "gap_pct": 79.553,
+   "crossings_per_100_ix": 0.416,
+   "name_pct": 43.58,
+   "tactile_crossings": 0,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Λαμιέων",
+   "pop_2021": 75315,
+   "pess_usable_pct": 3.522,
+   "gap_pct": 91.994,
+   "crossings_per_100_ix": 1.3,
+   "name_pct": 40.48,
+   "tactile_crossings": 0,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Χαλανδριου",
+   "pop_2021": 74192,
+   "pess_usable_pct": 5.935,
+   "gap_pct": 92.211,
+   "crossings_per_100_ix": 7.214,
+   "name_pct": 90.13,
+   "tactile_crossings": 1,
+   "sound_pct": 2.96
+  },
+  {
+   "name": "Ψευδοκοινοτητα Νεας Σμυρνης",
+   "pop_2021": 73076,
+   "pess_usable_pct": 6.347,
+   "gap_pct": 92.374,
+   "crossings_per_100_ix": 12.121,
+   "name_pct": 96.03,
+   "tactile_crossings": 2,
+   "sound_pct": 25.64
+  },
+  {
+   "name": "Κοινότητα Αλεξανδρούπολης",
+   "pop_2021": 72959,
+   "pess_usable_pct": 3.71,
+   "gap_pct": 93.129,
+   "crossings_per_100_ix": 0.741,
+   "name_pct": 35.32,
+   "tactile_crossings": 0,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Αμαρουσιου",
+   "pop_2021": 72333,
+   "pess_usable_pct": 14.737,
+   "gap_pct": 80.67,
+   "crossings_per_100_ix": 6.394,
+   "name_pct": 74.74,
+   "tactile_crossings": 0,
+   "sound_pct": 0.75
+  },
+  {
+   "name": "Κοινότητα Κοζάνης",
+   "pop_2021": 71388,
+   "pess_usable_pct": 10.322,
+   "gap_pct": 65.301,
+   "crossings_per_100_ix": 7.318,
+   "name_pct": 27.63,
+   "tactile_crossings": 1,
+   "sound_pct": 22.22
+  },
+  {
+   "name": "Ψευδοκοινοτητα Αγιου Δημητριου",
+   "pop_2021": 71294,
+   "pess_usable_pct": 15.017,
+   "gap_pct": 83.823,
+   "crossings_per_100_ix": 8.998,
+   "name_pct": 93.69,
+   "tactile_crossings": 25,
+   "sound_pct": 4.17
+  },
+  {
+   "name": "Κοινότητα Κηφισιάς",
+   "pop_2021": 71259,
+   "pess_usable_pct": 5.393,
+   "gap_pct": 91.52,
+   "crossings_per_100_ix": 3.871,
+   "name_pct": 79.15,
+   "tactile_crossings": 7,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Ζωγραφου",
+   "pop_2021": 71026,
+   "pess_usable_pct": 25.287,
+   "gap_pct": 69.822,
+   "crossings_per_100_ix": 5.206,
+   "name_pct": 70.35,
+   "tactile_crossings": 0,
+   "sound_pct": 16.22
+  },
+  {
+   "name": "Κοινότητα Καβάλας",
+   "pop_2021": 70501,
+   "pess_usable_pct": 7.232,
+   "gap_pct": 90.677,
+   "crossings_per_100_ix": 4.335,
+   "name_pct": 44.99,
+   "tactile_crossings": 7,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Πυλαίας",
+   "pop_2021": 70110,
+   "pess_usable_pct": 20.696,
+   "gap_pct": 75.066,
+   "crossings_per_100_ix": 3.978,
+   "name_pct": 54.15,
+   "tactile_crossings": 1,
+   "sound_pct": 10.1
+  },
+  {
+   "name": "Ψευδοκοινοτητα Αιγαλεω",
+   "pop_2021": 69946,
+   "pess_usable_pct": 15.501,
+   "gap_pct": 79.515,
+   "crossings_per_100_ix": 8.147,
+   "name_pct": 80.73,
+   "tactile_crossings": 0,
+   "sound_pct": 9.46
+  },
+  {
+   "name": "Κοινότητα Καλαμάτας",
+   "pop_2021": 69849,
+   "pess_usable_pct": 5.616,
+   "gap_pct": 89.409,
+   "crossings_per_100_ix": 3.341,
+   "name_pct": 25.3,
+   "tactile_crossings": 3,
+   "sound_pct": 7.32
+  },
+  {
+   "name": "Κοινότητα Κερκυραίων",
+   "pop_2021": 68558,
+   "pess_usable_pct": 8.373,
+   "gap_pct": 84.948,
+   "crossings_per_100_ix": 8.02,
+   "name_pct": 28.09,
+   "tactile_crossings": 6,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Νεας Ιωνιας",
+   "pop_2021": 67134,
+   "pess_usable_pct": 3.347,
+   "gap_pct": 95.186,
+   "crossings_per_100_ix": 17.345,
+   "name_pct": 92.5,
+   "tactile_crossings": 2,
+   "sound_pct": 10.87
+  },
+  {
+   "name": "Κοινότητα Κομοτηνής",
+   "pop_2021": 66919,
+   "pess_usable_pct": 10.277,
+   "gap_pct": 87.59,
+   "crossings_per_100_ix": 1.859,
+   "name_pct": 39.54,
+   "tactile_crossings": 28,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Βέροιας",
+   "pop_2021": 66547,
+   "pess_usable_pct": 9.92,
+   "gap_pct": 88.664,
+   "crossings_per_100_ix": 3.22,
+   "name_pct": 34.16,
+   "tactile_crossings": 15,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Ξάνθης",
+   "pop_2021": 65133,
+   "pess_usable_pct": 25.705,
+   "gap_pct": 72.081,
+   "crossings_per_100_ix": 1.337,
+   "name_pct": 31.23,
+   "tactile_crossings": 1,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Ψευδοκοινοτητα Παλαιου Φαληρου",
+   "pop_2021": 64021,
+   "pess_usable_pct": 18.526,
+   "gap_pct": 76.5,
+   "crossings_per_100_ix": 49.703,
+   "name_pct": 88.44,
+   "tactile_crossings": 2,
+   "sound_pct": 1.79
+  },
+  {
+   "name": "Ψευδοκοινοτητα Κορυδαλλου",
+   "pop_2021": 63445,
+   "pess_usable_pct": 12.923,
+   "gap_pct": 86.777,
+   "crossings_per_100_ix": 14.101,
+   "name_pct": 96.48,
+   "tactile_crossings": 4,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Γιαννιτσών",
+   "pop_2021": 63122,
+   "pess_usable_pct": 4.022,
+   "gap_pct": 93.064,
+   "crossings_per_100_ix": 0.75,
+   "name_pct": 22.69,
+   "tactile_crossings": 0,
+   "sound_pct": 0.0
+  },
+  {
+   "name": "Κοινότητα Αγίων Αναργύρων",
+   "pop_2021": 62529,
+   "pess_usable_pct": 1.671,
+   "gap_pct": 95.723,
+   "crossings_per_100_ix": 4.896,
+   "name_pct": 84.83,
+   "tactile_crossings": 0,
+   "sound_pct": 1.72
+  },
+  {
+   "name": "Ψευδοκοινοτητα Βυρωνος",
+   "pop_2021": 61308,
+   "pess_usable_pct": 20.5,
+   "gap_pct": 76.483,
+   "crossings_per_100_ix": 4.033,
+   "name_pct": 85.5,
+   "tactile_crossings": 0,
+   "sound_pct": 3.23
+  }
+ ],
+ "relationships": [
+  {
+   "covariate": "pop_2021",
+   "metric": "pess_usable_pct",
+   "n": 50,
+   "spearman_rho": -0.213,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  },
+  {
+   "covariate": "pop_2021",
+   "metric": "gap_pct",
+   "n": 50,
+   "spearman_rho": 0.183,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  },
+  {
+   "covariate": "pop_2021",
+   "metric": "crossings_per_100_ix",
+   "n": 50,
+   "spearman_rho": -0.02,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  },
+  {
+   "covariate": "pop_2021",
+   "metric": "name_pct",
+   "n": 50,
+   "spearman_rho": 0.028,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  },
+  {
+   "covariate": "density_per_km2",
+   "metric": "pess_usable_pct",
+   "n": 50,
+   "spearman_rho": 0.186,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  },
+  {
+   "covariate": "density_per_km2",
+   "metric": "gap_pct",
+   "n": 50,
+   "spearman_rho": -0.058,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  },
+  {
+   "covariate": "density_per_km2",
+   "metric": "crossings_per_100_ix",
+   "n": 50,
+   "spearman_rho": 0.736,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  },
+  {
+   "covariate": "density_per_km2",
+   "metric": "name_pct",
+   "n": 50,
+   "spearman_rho": 0.88,
+   "interpretation": "descriptive association in selected dimos groups; no causal inference"
+  }
+ ]
+}

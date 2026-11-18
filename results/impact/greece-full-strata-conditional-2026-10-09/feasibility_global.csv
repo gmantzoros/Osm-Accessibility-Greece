@@ -1,0 +1,2 @@
+profile,walkable_km,edges,pess_components,pess_largest_km,opt_components,opt_largest_km,min_usable_component_km,graph_scope,unknown_node_transitions,blocked_node_transitions,model_version
+bvi-v0,484665.996,23134316,57478,289.496,15225,379477.181,1.000,extended,39225,7364,conditional-2026-10-09

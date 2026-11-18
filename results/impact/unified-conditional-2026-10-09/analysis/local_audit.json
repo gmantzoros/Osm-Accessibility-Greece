@@ -1,0 +1,2376 @@
+{
+  "schema_version": "local-feature-audit-v2",
+  "reference_date": "2026-11-18",
+  "reference_date_source": "latest_completed_primary_audit_date",
+  "sample_fingerprint": "cc73929613ac17f9b1f16c11d7d6e0e1e27c98a0410280c5c4419dd4bd320962",
+  "sample_sha256": "df69117f043ab2389316c3847f387411f7e31a053c005f4ffee38f119162227d",
+  "input_sha256": "7f973ac69ac39e8a91999e49342de1d9986b70017ca41bc1f5107f573fa101b0",
+  "sampling_frames": [
+    "exact-radius-v2"
+  ],
+  "expected_primary_count": 500,
+  "supplied_primary_count": 500,
+  "completed_primary_count": 500,
+  "incomplete_primary_count": 0,
+  "expected_repeat_count": 50,
+  "expected_repeat_ids": [
+    "C0313",
+    "C0157",
+    "C0405",
+    "C0385",
+    "C0357",
+    "C0222",
+    "C0261",
+    "C0345",
+    "C0425",
+    "C0128",
+    "C0446",
+    "C0079",
+    "C0092",
+    "C0246",
+    "C0025",
+    "C0457",
+    "C0445",
+    "C0224",
+    "C0266",
+    "C0322",
+    "C0342",
+    "C0071",
+    "C0098",
+    "C0418",
+    "C0469",
+    "C0116",
+    "C0494",
+    "C0260",
+    "C0096",
+    "C0226",
+    "C0412",
+    "C0178",
+    "C0347",
+    "C0248",
+    "C0265",
+    "C0048",
+    "C0437",
+    "C0429",
+    "C0300",
+    "C0087",
+    "C0020",
+    "C0340",
+    "C0489",
+    "C0329",
+    "C0415",
+    "C0011",
+    "C0100",
+    "C0049",
+    "C0138",
+    "C0383"
+  ],
+  "supplied_repeat_count": 0,
+  "completed_repeat_count": 0,
+  "incomplete_repeat_count": 0,
+  "missing_repeat_count": 50,
+  "full_primary": true,
+  "full_repeat": false,
+  "repeat_status": "not_supplied",
+  "scope": "Equal-city and pool-weighted estimates for sampled local marker/way locations within the selected cities and historical sampling frame",
+  "warning": "No national, length-weighted, graph, route, acoustic-function, campaign-yield, cross-country or ground-truth accuracy inference",
+  "source_quality_limitations": [
+    "Source/viewer links do not prove the identity or capture date of the image actually inspected; source and capture metadata are observer supplied.",
+    "Year-only capture dates cannot locate an observation within the year. A year straddling the five-year cutoff is UNKNOWN; a current-year date retains the existing recent() rule but may postdate the reference date.",
+    "Incomplete, undated, invalid, stale, future, ambiguous-cutoff and unverifiable outcomes remain in the full sampled denominator.",
+    "Repeat agreement is descriptive within-observer consistency, not ground-truth accuracy; an incomplete repeat round is not full reliability.",
+    "Pool weights represent the sampled local marker/way frame, not street length, population, all national features or functional network truth."
+  ],
+  "quality_counts": {
+    "primary": {
+      "completed": 500,
+      "incomplete": 0,
+      "recent": 450,
+      "undated": 1,
+      "invalid": 0,
+      "stale": 49,
+      "future": 0,
+      "ambiguous_cutoff": 0,
+      "year_only": 499,
+      "year_only_current_year_ambiguity": 217,
+      "missing_source_reference": 0
+    },
+    "repeat": {
+      "completed": 0,
+      "incomplete": 0,
+      "recent": 0,
+      "undated": 0,
+      "invalid": 0,
+      "stale": 0,
+      "future": 0,
+      "ambiguous_cutoff": 0,
+      "year_only": 0,
+      "year_only_current_year_ambiguity": 0,
+      "missing_source_reference": 0
+    }
+  },
+  "quality_count_note": "Capture-status counts are mutually exclusive; completion, year-only and source-reference counts overlap them.",
+  "missing_reason_definitions": {
+    "incomplete": "Completion flag is blank or false.",
+    "undated": "No capture date supplied.",
+    "invalid": "Capture date cannot be parsed.",
+    "stale": "Capture date precedes the five-year window.",
+    "future": "Capture date (or year start) is after the reference date.",
+    "ambiguous_cutoff": "Year-only capture interval straddles the five-year cutoff.",
+    "unverifiable": "Observer explicitly could not verify the relevant outcome.",
+    "not_applicable": "Attribute does not supply a verifiable binary outcome.",
+    "missing_outcome": "No usable independent outcome."
+  },
+  "rates": [
+    {
+      "arm": "sidewalk",
+      "metric": "sidewalk_present",
+      "n": 500,
+      "cities": 50,
+      "denominator": "all sampled arm locations; attribute rates are joint with crossing presence",
+      "missing_reason_counts": {
+        "incomplete": 0,
+        "undated": 1,
+        "invalid": 0,
+        "stale": 49,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "unverifiable": 25,
+        "not_applicable": 0,
+        "missing_outcome": 0
+      },
+      "verifiable_count": 425,
+      "equal_city": {
+        "missing_bounds": [
+          0.5860000000000003,
+          0.7360000000000004
+        ],
+        "conservative_95pct_interval": [
+          0.5252638538091697,
+          0.796736146190831
+        ],
+        "verified_only_descriptive_rate": 0.6894117647058823,
+        "weighted_verifiable_fraction": 0.8500000000000005,
+        "endpoint_design_se": [
+          0.020381245699607413,
+          0.018273220904267008
+        ]
+      },
+      "feature_weighted": {
+        "missing_bounds": [
+          0.5530851022166524,
+          0.7097683480849066
+        ],
+        "conservative_95pct_interval": [
+          0.47897778645690864,
+          0.7838756638446505
+        ],
+        "verified_only_descriptive_rate": 0.655845030360025,
+        "weighted_verifiable_fraction": 0.8433167541317457,
+        "endpoint_design_se": [
+          0.02647066988004848,
+          0.02361112631404667
+        ]
+      },
+      "weight_note": "Pool-weighted local marker/way-frame estimate; not length-weighted or national. Selected cities are fixed.",
+      "pool_n": 102136,
+      "by_city": {
+        "DIMOS:Κοινότητα Αγίων Αναργύρων": {
+          "positive": 9,
+          "negative": 0,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Κοινότητα Αγρινίου": {
+          "positive": 3,
+          "negative": 4,
+          "missing_reasons": {
+            "unverifiable": 2,
+            "stale": 1
+          }
+        },
+        "DIMOS:Κοινότητα Αλεξανδρούπολης": {
+          "positive": 4,
+          "negative": 4,
+          "missing_reasons": {
+            "stale": 1,
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Κοινότητα Αχαρνών": {
+          "positive": 4,
+          "negative": 5,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Κοινότητα Βέροιας": {
+          "positive": 5,
+          "negative": 5,
+          "missing_reasons": {}
+        },
+        "DIMOS:Κοινότητα Βόλου": {
+          "positive": 5,
+          "negative": 3,
+          "missing_reasons": {
+            "stale": 2
+          }
+        },
+        "DIMOS:Κοινότητα Γιαννιτσών": {
+          "positive": 4,
+          "negative": 3,
+          "missing_reasons": {
+            "stale": 3
+          }
+        },
+        "DIMOS:Κοινότητα Ευόσμου": {
+          "positive": 7,
+          "negative": 3,
+          "missing_reasons": {}
+        },
+        "DIMOS:Κοινότητα Ιωαννιτών": {
+          "positive": 8,
+          "negative": 2,
+          "missing_reasons": {}
+        },
+        "DIMOS:Κοινότητα Καβάλας": {
+          "positive": 3,
+          "negative": 6,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Κοινότητα Καλαμάτας": {
+          "positive": 4,
+          "negative": 4,
+          "missing_reasons": {
+            "stale": 2
+          }
+        },
+        "DIMOS:Κοινότητα Κατερίνης": {
+          "positive": 5,
+          "negative": 3,
+          "missing_reasons": {
+            "stale": 2
+          }
+        },
+        "DIMOS:Κοινότητα Κερατσινίου": {
+          "positive": 9,
+          "negative": 0,
+          "missing_reasons": {
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Κοινότητα Κερκυραίων": {
+          "positive": 5,
+          "negative": 3,
+          "missing_reasons": {
+            "unverifiable": 2
+          }
+        },
+        "DIMOS:Κοινότητα Κηφισιάς": {
+          "positive": 5,
+          "negative": 4,
+          "missing_reasons": {
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Κοινότητα Κοζάνης": {
+          "positive": 5,
+          "negative": 3,
+          "missing_reasons": {
+            "stale": 2
+          }
+        },
+        "DIMOS:Κοινότητα Κομοτηνής": {
+          "positive": 1,
+          "negative": 7,
+          "missing_reasons": {
+            "stale": 1,
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Κοινότητα Λαμιέων": {
+          "positive": 2,
+          "negative": 4,
+          "missing_reasons": {
+            "stale": 3,
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Κοινότητα Νικαίας": {
+          "positive": 9,
+          "negative": 1,
+          "missing_reasons": {}
+        },
+        "DIMOS:Κοινότητα Ξάνθης": {
+          "positive": 5,
+          "negative": 4,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Κοινότητα Πυλαίας": {
+          "positive": 5,
+          "negative": 1,
+          "missing_reasons": {
+            "undated": 1,
+            "stale": 2,
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Κοινότητα Ρόδου": {
+          "positive": 2,
+          "negative": 8,
+          "missing_reasons": {}
+        },
+        "DIMOS:Κοινότητα Σερρών": {
+          "positive": 2,
+          "negative": 6,
+          "missing_reasons": {
+            "unverifiable": 1,
+            "stale": 1
+          }
+        },
+        "DIMOS:Κοινότητα Σταυρουπόλεως": {
+          "positive": 8,
+          "negative": 1,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Κοινότητα Συκεών": {
+          "positive": 7,
+          "negative": 1,
+          "missing_reasons": {
+            "stale": 2
+          }
+        },
+        "DIMOS:Κοινότητα Τρικκαίων": {
+          "positive": 3,
+          "negative": 4,
+          "missing_reasons": {
+            "unverifiable": 3
+          }
+        },
+        "DIMOS:Κοινότητα Χαλκιδέων": {
+          "positive": 3,
+          "negative": 7,
+          "missing_reasons": {}
+        },
+        "DIMOS:Κοινότητα Χανίων": {
+          "positive": 5,
+          "negative": 5,
+          "missing_reasons": {}
+        },
+        "DIMOS:Ψευδοκοινοτητα Αγιου Δημητριου": {
+          "positive": 7,
+          "negative": 1,
+          "missing_reasons": {
+            "unverifiable": 1,
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Αθηναιων": {
+          "positive": 6,
+          "negative": 1,
+          "missing_reasons": {
+            "stale": 3
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Αιγαλεω": {
+          "positive": 4,
+          "negative": 4,
+          "missing_reasons": {
+            "stale": 1,
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Αμαρουσιου": {
+          "positive": 8,
+          "negative": 2,
+          "missing_reasons": {}
+        },
+        "DIMOS:Ψευδοκοινοτητα Βυρωνος": {
+          "positive": 9,
+          "negative": 0,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Γλυφαδας": {
+          "positive": 9,
+          "negative": 0,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Ζωγραφου": {
+          "positive": 7,
+          "negative": 2,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Ηλιουπολεως": {
+          "positive": 9,
+          "negative": 0,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Ηρακλειου": {
+          "positive": 5,
+          "negative": 3,
+          "missing_reasons": {
+            "unverifiable": 2
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Θεσσαλονικης": {
+          "positive": 10,
+          "negative": 0,
+          "missing_reasons": {}
+        },
+        "DIMOS:Ψευδοκοινοτητα Ιλιου": {
+          "positive": 5,
+          "negative": 1,
+          "missing_reasons": {
+            "stale": 4
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Καλαμαριας": {
+          "positive": 7,
+          "negative": 1,
+          "missing_reasons": {
+            "unverifiable": 1,
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Καλλιθεας": {
+          "positive": 6,
+          "negative": 2,
+          "missing_reasons": {
+            "stale": 1,
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Κορυδαλλου": {
+          "positive": 3,
+          "negative": 3,
+          "missing_reasons": {
+            "stale": 4
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Λαρισαιων": {
+          "positive": 6,
+          "negative": 3,
+          "missing_reasons": {
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Νεας Ιωνιας": {
+          "positive": 9,
+          "negative": 0,
+          "missing_reasons": {
+            "unverifiable": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Νεας Σμυρνης": {
+          "positive": 9,
+          "negative": 0,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Παλαιου Φαληρου": {
+          "positive": 7,
+          "negative": 1,
+          "missing_reasons": {
+            "unverifiable": 2
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Πατρεων": {
+          "positive": 5,
+          "negative": 4,
+          "missing_reasons": {
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Πειραιως": {
+          "positive": 8,
+          "negative": 0,
+          "missing_reasons": {
+            "unverifiable": 1,
+            "stale": 1
+          }
+        },
+        "DIMOS:Ψευδοκοινοτητα Περιστεριου": {
+          "positive": 9,
+          "negative": 1,
+          "missing_reasons": {}
+        },
+        "DIMOS:Ψευδοκοινοτητα Χαλανδριου": {
+          "positive": 8,
+          "negative": 2,
+          "missing_reasons": {}
+        }
+      }
+    }
+  ],
+  "city_arm_counts": [
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Αγίων Αναργύρων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 846,
+      "draw_n": 10,
+      "inclusion_probability": 0.01182033096926714,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 9
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 4,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Αγρινίου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2254,
+      "draw_n": 10,
+      "inclusion_probability": 0.0044365572315882874,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 4,
+          "both": 3,
+          "unverifiable": 2
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Αλεξανδρούπολης",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2269,
+      "draw_n": 10,
+      "inclusion_probability": 0.004407227853680035,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 4,
+          "right": 1,
+          "both": 3,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 9,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Αχαρνών",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 4825,
+      "draw_n": 10,
+      "inclusion_probability": 0.002072538860103627,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 4,
+          "none": 5
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Βέροιας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1601,
+      "draw_n": 10,
+      "inclusion_probability": 0.006246096189881324,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 5,
+          "both": 4,
+          "left": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 8,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Βόλου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2533,
+      "draw_n": 10,
+      "inclusion_probability": 0.0039478878799842085,
+      "recent_capture": 8,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 3,
+          "both": 4,
+          "right": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 8,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 2,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Γιαννιτσών",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1473,
+      "draw_n": 10,
+      "inclusion_probability": 0.006788866259334691,
+      "recent_capture": 7,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 3,
+          "both": 3,
+          "right": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 7,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 3,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 7,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Ευόσμου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1623,
+      "draw_n": 10,
+      "inclusion_probability": 0.0061614294516327784,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 3,
+          "both": 6,
+          "right": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Ιωαννιτών",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1356,
+      "draw_n": 10,
+      "inclusion_probability": 0.007374631268436578,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 7,
+          "right": 1,
+          "none": 2
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 8,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Καβάλας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2030,
+      "draw_n": 10,
+      "inclusion_probability": 0.0049261083743842365,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 3,
+          "none": 6
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 2,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Καλαμάτας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2285,
+      "draw_n": 10,
+      "inclusion_probability": 0.00437636761487965,
+      "recent_capture": 8,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 4,
+          "none": 4
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 8,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 2,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 2,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Κατερίνης",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2532,
+      "draw_n": 10,
+      "inclusion_probability": 0.0039494470774091624,
+      "recent_capture": 8,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 5,
+          "none": 3
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 8,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 2,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 1,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Κερατσινίου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1291,
+      "draw_n": 10,
+      "inclusion_probability": 0.0077459333849728895,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 9,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 9,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Κερκυραίων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1789,
+      "draw_n": 10,
+      "inclusion_probability": 0.005589714924538848,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 3,
+          "both": 5,
+          "unverifiable": 2
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Κηφισιάς",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2138,
+      "draw_n": 10,
+      "inclusion_probability": 0.004677268475210477,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 4,
+          "both": 3,
+          "right": 1,
+          "unverifiable": 1,
+          "left": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 1,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Κοζάνης",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1037,
+      "draw_n": 10,
+      "inclusion_probability": 0.009643201542912247,
+      "recent_capture": 8,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 5,
+          "none": 3
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 8,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 2,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Κομοτηνής",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1836,
+      "draw_n": 10,
+      "inclusion_probability": 0.0054466230936819175,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 7,
+          "unverifiable": 1,
+          "both": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 8,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Λαμιέων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2188,
+      "draw_n": 10,
+      "inclusion_probability": 0.004570383912248629,
+      "recent_capture": 7,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 4,
+          "both": 2,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 7,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 3,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 1,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Νικαίας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 926,
+      "draw_n": 10,
+      "inclusion_probability": 0.01079913606911447,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 9,
+          "none": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 6,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Ξάνθης",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1170,
+      "draw_n": 10,
+      "inclusion_probability": 0.008547008547008548,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 4,
+          "right": 1,
+          "none": 4
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Πυλαίας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2348,
+      "draw_n": 10,
+      "inclusion_probability": 0.004258943781942078,
+      "recent_capture": 7,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 1,
+          "both": 5,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 7,
+        "undated": 1,
+        "invalid": 0,
+        "stale": 2,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 9,
+        "year_only_current_year_ambiguity": 4,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Ρόδου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1907,
+      "draw_n": 10,
+      "inclusion_probability": 0.005243838489774515,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 2,
+          "none": 8
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Σερρών",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2524,
+      "draw_n": 10,
+      "inclusion_probability": 0.003961965134706815,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 6,
+          "unverifiable": 1,
+          "both": 2
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Σταυρουπόλεως",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 908,
+      "draw_n": 10,
+      "inclusion_probability": 0.011013215859030838,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 8,
+          "none": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 4,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Συκεών",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 878,
+      "draw_n": 10,
+      "inclusion_probability": 0.011389521640091117,
+      "recent_capture": 8,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 6,
+          "none": 1,
+          "left": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 8,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 2,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 4,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Τρικκαίων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 3151,
+      "draw_n": 10,
+      "inclusion_probability": 0.0031735956839098697,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 4,
+          "unverifiable": 3,
+          "both": 2,
+          "right": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Χαλκιδέων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2281,
+      "draw_n": 10,
+      "inclusion_probability": 0.004384042086804033,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 7,
+          "both": 3
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 8,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Κοινότητα Χανίων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1101,
+      "draw_n": 10,
+      "inclusion_probability": 0.009082652134423252,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 5,
+          "both": 4,
+          "right": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 6,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Αγιου Δημητριου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1040,
+      "draw_n": 10,
+      "inclusion_probability": 0.009615384615384616,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 1,
+          "both": 7,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 3,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Αθηναιων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 7814,
+      "draw_n": 10,
+      "inclusion_probability": 0.001279754287176862,
+      "recent_capture": 7,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 1,
+          "both": 6
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 7,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 3,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 2,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Αιγαλεω",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 995,
+      "draw_n": 10,
+      "inclusion_probability": 0.010050251256281407,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 4,
+          "none": 4,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 3,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Αμαρουσιου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2640,
+      "draw_n": 10,
+      "inclusion_probability": 0.003787878787878788,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 6,
+          "right": 2,
+          "none": 2
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 8,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Βυρωνος",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 784,
+      "draw_n": 10,
+      "inclusion_probability": 0.012755102040816327,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 9
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Γλυφαδας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1405,
+      "draw_n": 10,
+      "inclusion_probability": 0.0071174377224199285,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 8,
+          "left": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 6,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Ζωγραφου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 771,
+      "draw_n": 10,
+      "inclusion_probability": 0.01297016861219196,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 2,
+          "both": 6,
+          "right": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Ηλιουπολεως",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 942,
+      "draw_n": 10,
+      "inclusion_probability": 0.010615711252653927,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 7,
+          "left": 2
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 6,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Ηρακλειου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 4964,
+      "draw_n": 10,
+      "inclusion_probability": 0.00201450443190975,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 2,
+          "none": 3,
+          "right": 3,
+          "unverifiable": 2
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 10,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Θεσσαλονικης",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 3567,
+      "draw_n": 10,
+      "inclusion_probability": 0.0028034763106251754,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 10
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 6,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Ιλιου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1661,
+      "draw_n": 10,
+      "inclusion_probability": 0.006020469596628537,
+      "recent_capture": 6,
+      "recent_responses": {
+        "sidewalk": {
+          "left": 1,
+          "both": 4,
+          "none": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 6,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 4,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 4,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Καλαμαριας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1239,
+      "draw_n": 10,
+      "inclusion_probability": 0.008071025020177562,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 7,
+          "none": 1,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Καλλιθεας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 857,
+      "draw_n": 10,
+      "inclusion_probability": 0.011668611435239206,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 5,
+          "none": 2,
+          "right": 1,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 7,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Κορυδαλλου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 503,
+      "draw_n": 10,
+      "inclusion_probability": 0.019880715705765408,
+      "recent_capture": 6,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 3,
+          "both": 3
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 6,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 4,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Λαρισαιων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 4917,
+      "draw_n": 10,
+      "inclusion_probability": 0.002033760423022168,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 3,
+          "right": 2,
+          "both": 3,
+          "unverifiable": 1,
+          "left": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 4,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Νεας Ιωνιας",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1039,
+      "draw_n": 10,
+      "inclusion_probability": 0.009624639076034648,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 8,
+          "unverifiable": 1,
+          "left": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 4,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Νεας Σμυρνης",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 704,
+      "draw_n": 10,
+      "inclusion_probability": 0.014204545454545454,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 9
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 5,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Παλαιου Φαληρου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 618,
+      "draw_n": 10,
+      "inclusion_probability": 0.016181229773462782,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 7,
+          "unverifiable": 2,
+          "none": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 0,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Πατρεων",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 5588,
+      "draw_n": 10,
+      "inclusion_probability": 0.0017895490336435219,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 4,
+          "none": 4,
+          "left": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 1,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Πειραιως",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2502,
+      "draw_n": 10,
+      "inclusion_probability": 0.003996802557953637,
+      "recent_capture": 9,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 7,
+          "left": 1,
+          "unverifiable": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 9,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 1,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 3,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Περιστεριου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 2520,
+      "draw_n": 10,
+      "inclusion_probability": 0.003968253968253968,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "both": 9,
+          "none": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 8,
+        "missing_source_reference": 0
+      }
+    },
+    {
+      "arm": "sidewalk",
+      "city": "DIMOS:Ψευδοκοινοτητα Χαλανδριου",
+      "n": 10,
+      "completed": 10,
+      "incomplete": 0,
+      "pool_n": 1966,
+      "draw_n": 10,
+      "inclusion_probability": 0.00508646998982706,
+      "recent_capture": 10,
+      "recent_responses": {
+        "sidewalk": {
+          "none": 2,
+          "both": 7,
+          "right": 1
+        }
+      },
+      "quality_counts": {
+        "completed": 10,
+        "incomplete": 0,
+        "recent": 10,
+        "undated": 0,
+        "invalid": 0,
+        "stale": 0,
+        "future": 0,
+        "ambiguous_cutoff": 0,
+        "year_only": 10,
+        "year_only_current_year_ambiguity": 10,
+        "missing_source_reference": 0
+      }
+    }
+  ],
+  "repeat_agreement": {
+    "crossing_exists": {
+      "pairs": 0,
+      "agreements": 0,
+      "verifiable_pairs": 0,
+      "verifiable_agreements": 0,
+      "descriptive_agreement_rate": null,
+      "descriptive_verifiable_agreement_rate": null,
+      "repeat_round_complete": false
+    },
+    "markings": {
+      "pairs": 0,
+      "agreements": 0,
+      "verifiable_pairs": 0,
+      "verifiable_agreements": 0,
+      "descriptive_agreement_rate": null,
+      "descriptive_verifiable_agreement_rate": null,
+      "repeat_round_complete": false
+    },
+    "tactile": {
+      "pairs": 0,
+      "agreements": 0,
+      "verifiable_pairs": 0,
+      "verifiable_agreements": 0,
+      "descriptive_agreement_rate": null,
+      "descriptive_verifiable_agreement_rate": null,
+      "repeat_round_complete": false
+    },
+    "kerb": {
+      "pairs": 0,
+      "agreements": 0,
+      "verifiable_pairs": 0,
+      "verifiable_agreements": 0,
+      "descriptive_agreement_rate": null,
+      "descriptive_verifiable_agreement_rate": null,
+      "repeat_round_complete": false
+    },
+    "sidewalk": {
+      "pairs": 0,
+      "agreements": 0,
+      "verifiable_pairs": 0,
+      "verifiable_agreements": 0,
+      "descriptive_agreement_rate": null,
+      "descriptive_verifiable_agreement_rate": null,
+      "repeat_round_complete": false
+    }
+  },
+  "city_labels": {
+    "DIMOS:Κοινότητα Αγίων Αναργύρων": "Agioi Anargyroi",
+    "DIMOS:Κοινότητα Αγρινίου": "Agrinio",
+    "DIMOS:Κοινότητα Αλεξανδρούπολης": "Alexandroupoli",
+    "DIMOS:Κοινότητα Αχαρνών": "Acharnes",
+    "DIMOS:Κοινότητα Βέροιας": "Veroia",
+    "DIMOS:Κοινότητα Βόλου": "Volos",
+    "DIMOS:Κοινότητα Γιαννιτσών": "Giannitsa",
+    "DIMOS:Κοινότητα Ευόσμου": "Evosmos",
+    "DIMOS:Κοινότητα Ιωαννιτών": "Ioannina",
+    "DIMOS:Κοινότητα Καβάλας": "Kavala",
+    "DIMOS:Κοινότητα Καλαμάτας": "Kalamata",
+    "DIMOS:Κοινότητα Κατερίνης": "Katerini",
+    "DIMOS:Κοινότητα Κερατσινίου": "Keratsini",
+    "DIMOS:Κοινότητα Κερκυραίων": "Corfu",
+    "DIMOS:Κοινότητα Κηφισιάς": "Kifisia",
+    "DIMOS:Κοινότητα Κοζάνης": "Kozani",
+    "DIMOS:Κοινότητα Κομοτηνής": "Komotini",
+    "DIMOS:Κοινότητα Λαμιέων": "Lamia",
+    "DIMOS:Κοινότητα Νικαίας": "Nikaia",
+    "DIMOS:Κοινότητα Ξάνθης": "Xanthi",
+    "DIMOS:Κοινότητα Πυλαίας": "Pylaia",
+    "DIMOS:Κοινότητα Ρόδου": "Rhodes",
+    "DIMOS:Κοινότητα Σερρών": "Serres",
+    "DIMOS:Κοινότητα Σταυρουπόλεως": "Stavroupoli",
+    "DIMOS:Κοινότητα Συκεών": "Sykies",
+    "DIMOS:Κοινότητα Τρικκαίων": "Trikala",
+    "DIMOS:Κοινότητα Χαλκιδέων": "Chalkida",
+    "DIMOS:Κοινότητα Χανίων": "Chania",
+    "DIMOS:Ψευδοκοινοτητα Αγιου Δημητριου": "Agios Dimitrios",
+    "DIMOS:Ψευδοκοινοτητα Αθηναιων": "Athens",
+    "DIMOS:Ψευδοκοινοτητα Αιγαλεω": "Aigaleo",
+    "DIMOS:Ψευδοκοινοτητα Αμαρουσιου": "Marousi",
+    "DIMOS:Ψευδοκοινοτητα Βυρωνος": "Vyronas",
+    "DIMOS:Ψευδοκοινοτητα Γλυφαδας": "Glyfada",
+    "DIMOS:Ψευδοκοινοτητα Ζωγραφου": "Zografou",
+    "DIMOS:Ψευδοκοινοτητα Ηλιουπολεως": "Ilioupoli",
+    "DIMOS:Ψευδοκοινοτητα Ηρακλειου": "Heraklion",
+    "DIMOS:Ψευδοκοινοτητα Θεσσαλονικης": "Thessaloniki",
+    "DIMOS:Ψευδοκοινοτητα Ιλιου": "Ilion",
+    "DIMOS:Ψευδοκοινοτητα Καλαμαριας": "Kalamaria",
+    "DIMOS:Ψευδοκοινοτητα Καλλιθεας": "Kallithea",
+    "DIMOS:Ψευδοκοινοτητα Κορυδαλλου": "Korydallos",
+    "DIMOS:Ψευδοκοινοτητα Λαρισαιων": "Larissa",
+    "DIMOS:Ψευδοκοινοτητα Νεας Ιωνιας": "Nea Ionia",
+    "DIMOS:Ψευδοκοινοτητα Νεας Σμυρνης": "Nea Smyrni",
+    "DIMOS:Ψευδοκοινοτητα Παλαιου Φαληρου": "Palaio Faliro",
+    "DIMOS:Ψευδοκοινοτητα Πατρεων": "Patras",
+    "DIMOS:Ψευδοκοινοτητα Πειραιως": "Piraeus",
+    "DIMOS:Ψευδοκοινοτητα Περιστεριου": "Peristeri",
+    "DIMOS:Ψευδοκοινοτητα Χαλανδριου": "Chalandri"
+  },
+  "city_groups": {
+    "DIMOS:Κοινότητα Αγίων Αναργύρων": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Αγρινίου": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Αλεξανδρούπολης": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Αχαρνών": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Βέροιας": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Βόλου": "proxy_cities",
+    "DIMOS:Κοινότητα Γιαννιτσών": "proxy_rural",
+    "DIMOS:Κοινότητα Ευόσμου": "proxy_cities",
+    "DIMOS:Κοινότητα Ιωαννιτών": "proxy_cities",
+    "DIMOS:Κοινότητα Καβάλας": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Καλαμάτας": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Κατερίνης": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Κερατσινίου": "proxy_cities",
+    "DIMOS:Κοινότητα Κερκυραίων": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Κηφισιάς": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Κοζάνης": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Κομοτηνής": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Λαμιέων": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Νικαίας": "proxy_cities",
+    "DIMOS:Κοινότητα Ξάνθης": "proxy_cities",
+    "DIMOS:Κοινότητα Πυλαίας": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Ρόδου": "proxy_cities",
+    "DIMOS:Κοινότητα Σερρών": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Σταυρουπόλεως": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Συκεών": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Τρικκαίων": "proxy_towns_suburbs",
+    "DIMOS:Κοινότητα Χαλκιδέων": "proxy_cities",
+    "DIMOS:Κοινότητα Χανίων": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Αγιου Δημητριου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Αθηναιων": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Αιγαλεω": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Αμαρουσιου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Βυρωνος": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Γλυφαδας": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Ζωγραφου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Ηλιουπολεως": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Ηρακλειου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Θεσσαλονικης": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Ιλιου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Καλαμαριας": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Καλλιθεας": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Κορυδαλλου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Λαρισαιων": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Νεας Ιωνιας": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Νεας Σμυρνης": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Παλαιου Φαληρου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Πατρεων": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Πειραιως": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Περιστεριου": "proxy_cities",
+    "DIMOS:Ψευδοκοινοτητα Χαλανδριου": "proxy_cities"
+  },
+  "primary_audit_dates": [
+    "2026-09-15",
+    "2026-11-18"
+  ],
+  "domains": {
+    "density_proxy": {
+      "proxy_cities": {
+        "cities": 31,
+        "n": 310,
+        "positive": 209,
+        "negative": 64,
+        "equal_city": {
+          "missing_bounds": [
+            0.6741935483870967,
+            0.7935483870967741
+          ],
+          "conservative_95pct_interval": [
+            0.5970585655897205,
+            0.8706833698941503
+          ],
+          "verified_only_descriptive_rate": 0.7655677655677655,
+          "weighted_verifiable_fraction": 0.8806451612903226,
+          "endpoint_design_se": [
+            0.025007625533359043,
+            0.020939745806273852
+          ]
+        }
+      },
+      "proxy_rural": {
+        "cities": 1,
+        "n": 10,
+        "positive": 4,
+        "negative": 3,
+        "equal_city": {
+          "missing_bounds": [
+            0.4,
+            0.7
+          ],
+          "conservative_95pct_interval": [
+            0.0,
+            1.0
+          ],
+          "verified_only_descriptive_rate": 0.5714285714285715,
+          "weighted_verifiable_fraction": 0.7,
+          "endpoint_design_se": [
+            0.1627440635878446,
+            0.1522331319192667
+          ]
+        }
+      },
+      "proxy_towns_suburbs": {
+        "cities": 18,
+        "n": 180,
+        "positive": 80,
+        "negative": 65,
+        "equal_city": {
+          "missing_bounds": [
+            0.4444444444444445,
+            0.638888888888889
+          ],
+          "conservative_95pct_interval": [
+            0.3432175341263936,
+            0.7401157992069398
+          ],
+          "verified_only_descriptive_rate": 0.5517241379310347,
+          "weighted_verifiable_fraction": 0.8055555555555554,
+          "endpoint_design_se": [
+            0.03561673762438858,
+            0.0347046208666739
+          ]
+        }
+      }
+    },
+    "road_class": {
+      "living_street": {
+        "positive": 3,
+        "negative": 0,
+        "unresolved": 0
+      },
+      "motorway": {
+        "positive": 1,
+        "negative": 2,
+        "unresolved": 0
+      },
+      "motorway_link": {
+        "positive": 2,
+        "negative": 3,
+        "unresolved": 0
+      },
+      "primary": {
+        "positive": 14,
+        "negative": 8,
+        "unresolved": 2
+      },
+      "primary_link": {
+        "positive": 0,
+        "negative": 1,
+        "unresolved": 0
+      },
+      "residential": {
+        "positive": 173,
+        "negative": 67,
+        "unresolved": 32
+      },
+      "secondary": {
+        "positive": 21,
+        "negative": 1,
+        "unresolved": 0
+      },
+      "secondary_link": {
+        "positive": 2,
+        "negative": 0,
+        "unresolved": 0
+      },
+      "service": {
+        "positive": 33,
+        "negative": 38,
+        "unresolved": 31
+      },
+      "tertiary": {
+        "positive": 38,
+        "negative": 6,
+        "unresolved": 3
+      },
+      "tertiary_link": {
+        "positive": 2,
+        "negative": 0,
+        "unresolved": 0
+      },
+      "trunk": {
+        "positive": 1,
+        "negative": 1,
+        "unresolved": 0
+      },
+      "trunk_link": {
+        "positive": 2,
+        "negative": 0,
+        "unresolved": 0
+      },
+      "unclassified": {
+        "positive": 1,
+        "negative": 5,
+        "unresolved": 7
+      }
+    },
+    "road_class_note": "Unweighted sample counts; road classes are not sampling strata."
+  },
+  "available": true,
+  "status": "primary_complete",
+  "sources": {
+    "primary_export": {
+      "file": "audit_results_v2.csv",
+      "sha256": "3eb34e0f20536065b1f324ad9a40af3d94309471d07dcc6c5ef97c91e97ab626"
+    },
+    "sample": {
+      "file": "audit_sample.csv",
+      "sha256": "df69117f043ab2389316c3847f387411f7e31a053c005f4ffee38f119162227d"
+    },
+    "input": {
+      "file": "greece-latest.osm.pbf",
+      "sha256": "7f973ac69ac39e8a91999e49342de1d9986b70017ca41bc1f5107f573fa101b0"
+    },
+    "analysis_code": {
+      "file": "analysis\\local_audit.py",
+      "sha256": "6fb84cf324ffb36b1d0fb19899a6efcfb2f66e23f6258ae5f4894df3b7f75f9f"
+    }
+  }
+}

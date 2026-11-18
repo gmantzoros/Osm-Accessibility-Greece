@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "model_version": "conditional-2026-10-09",
+  "producer": "exposure",
+  "source_sha256": {
+    "results/impact/greece-full-strata-conditional-2026-10-09/run_manifest.json": "59f84506e7c8c2139bed2da94df41a272ec24602173374578c98fcda32a61698",
+    "results/impact/greece-full-strata-conditional-2026-10-09/feasibility.csv": "167cd6f6628033d1085394476d9b076ad39d773c7765e39fffa20da41cfe3214",
+    "results/impact/greece-full-strata-conditional-2026-10-09/crossing_metrics.csv": "90f5f3d66a3d17179531e644c57011d18d5dae1e4c1380a29fb56fda0ec4414f",
+    "data/boundaries/municipalities.csv": "8d41ca475f8541db419675f37222c4cbd127ef227d32e3a30dd5cd5a43049829",
+    "analysis/exposure.py": "600a2140d34d835856d15875fd0a5d13698a50fb18b58892e7522793abd237d4"
+  },
+  "output_sha256": {
+    "results/impact/unified-conditional-2026-10-09/analysis/exposure_metadata.json": "75821bf758c40a4fef1bc1e739c7f95eac59e8c85d4a240dbcd266d203de527f",
+    "results/impact/unified-conditional-2026-10-09/analysis/exposure_bands.csv": "a1b2843be7ba71643ce47cdaf33f11ec6501d4af28f3c9a26fef1e27d78cab28",
+    "results/impact/unified-conditional-2026-10-09/analysis/exposure_facts.csv": "6afca1c1ec86471fa043e3186d5ebdea5e244fc444ed16cf72836846374ef699",
+    "results/impact/unified-conditional-2026-10-09/analysis/exposure_by_lau.csv": "8652a3edcdfc47b544188bb64338dd21aa84669e92f410b2f8b5c58b10eabb41"
+  }
+}
